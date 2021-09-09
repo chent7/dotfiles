@@ -1,0 +1,26 @@
+#!/bin/sh
+# nvidia
+nvidia-settings --load-config-only &
+nvidia-settings -a '[gpu:0]/GPUPowerMizerMode=1' &
+
+# picom
+picom --experimental-backends &
+
+# notifications
+dunst &
+
+# polkit
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# daemon
+fcitx5 -d &
+xfce4-power-manager --daemon &
+thunar --daemon &
+
+# wallpaper
+nitrogen --restore &
+
+# autostart
+steam-native -silent &
+qbittorrent &
+discord --start-minimized &
