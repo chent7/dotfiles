@@ -17,6 +17,7 @@ dunst 1.6.1-2
 efibootmgr 17-2
 emptty 0.6.0-1
 fakeroot 1.25.3-2
+fbgrab 1.5-1
 fcitx5 5.0.8-1
 fcitx5-chewing 5.0.5-1
 fcitx5-configtool 5.0.5-1
@@ -28,6 +29,7 @@ ffmpegthumbnailer 2.2.2-2
 file 5.40-5
 findutils 4.8.0-1
 firefox 91.0.2-1
+flameshot 0.10.1-1
 flex 2.6.4-3
 folderpreview 0.4.3-1
 gawk 5.1.0-1
