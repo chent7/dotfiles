@@ -1,0 +1,4 @@
+#!/bin/sh
+alias ls='ls --color=auto'
+alias c='clear'
+alias n='nano'

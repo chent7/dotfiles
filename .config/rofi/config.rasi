@@ -1,0 +1,19 @@
+configuration {
+	font: "JetBrains Mono 12";
+	width: 600;
+	show-icons: true;
+	display-drun: "Search";
+	theme: "~/.cache/wal/colors-rofi-dark";
+}
+
+element {
+	margin:                         0.5% 0% 0% 0%;
+}
+
+element-icon {
+    size:                           22px;
+}
+
+element-text {
+    margin:                         0% 0% 0% 0.5%;
+}
