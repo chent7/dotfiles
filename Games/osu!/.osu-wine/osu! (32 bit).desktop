@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=osu! (32 bit)
+Type=Application
+Exec="/home/pacer/Games/osu!/.osu-wine/osu-32.sh"
+Icon=/home/pacer/Games/osu!/.osu-wine/icon.png
+StartupWMClass=osu!.exe
+Categories=Games
