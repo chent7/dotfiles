@@ -5,8 +5,8 @@
 
 #### Directions:
 - Packages from arch listed in `.installed-packages`
-- Packages from pip listed in `.installed-pip`
 - Information on osu! see `~/Games/osu!/.osu-wine/readme.txt`
+- To deploy pacman packages, `yay -S --needed - < .installed-packages`
 #### Note:
 - My dotfiles are designed for `lightdm` and won't work properly with `xinit` display managers like `emptty`
 - I use proprietary `nvidia-dkms` drivers
