@@ -1,5 +1,5 @@
 configuration {
-	theme: "wpg";
+	theme: "~/.cache/wal/colors-rofi-dark";
 	font: "JetBrains Mono 12";
 	width: 600;
 	show-icons: true;

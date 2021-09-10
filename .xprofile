@@ -16,6 +16,7 @@ dunst &
 fcitx5 -d &
 xfce4-power-manager --daemon &
 thunar --daemon &
+flameshot &
 
 # wallpaper
 nitrogen --restore &
