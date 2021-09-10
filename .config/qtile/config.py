@@ -51,6 +51,7 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown()),
     Key(["mod4"], "l", lazy.spawn("i3lock -e -B 4")),
     Key([mod], "d", lazy.spawn("rofi -show drun")),
+    Key([mod], "p", lazy.spawn("dmenu_run -p command: -nb %s -sb %s" % (color_bg,color_focus))),
 ]
 
 groups = [
@@ -92,12 +93,11 @@ screens = [
         top=bar.Bar([
 	        widget.WindowName(
 	    	    font='JetBrains Mono Bold',
-                #background=color_focus,
 		    padding=10,
 	        ),
             widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
         ],
-            22,
+            20,
 	        background=color_bg,
 	        opacity=0.7,
         ),
@@ -121,7 +121,7 @@ screens = [
 	        ),
             widget.Systray(),
         ],
-            22,
+            20,
             background=color_bg,
 	        opacity=0.7,
         ),
