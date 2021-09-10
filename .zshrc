@@ -17,7 +17,7 @@ PS1="%B%{$fg[red]%} %~ %{$reset_color%}>%b "
 # history
 HISTSIZE=1000
 SAVEHIST=1000
-HISTFILE=~/.cache/zsh/history
+HISTFILE=~/.cache/zhistory
 setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_ALL_DUPS
 
