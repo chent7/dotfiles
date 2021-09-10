@@ -4,6 +4,7 @@
 ![alt text](https://github.com/chent7/dotfiles/blob/master/.screenshots/2021-09-09_10-55.png?raw=true)
 
 #### Directions:
+- Deploy my dotfiles with `yadm`
 - Packages from arch listed in `.installed-packages`
 - Information on osu! see `~/Games/osu!/.osu-wine/readme.txt`
 - To deploy pacman packages, `yay -S --needed - < .installed-packages`
