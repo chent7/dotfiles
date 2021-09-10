@@ -92,7 +92,7 @@ screens = [
     Screen(
         top=bar.Bar([
 	        widget.WindowName(
-	    	    font='JetBrains Mono Bold',
+	    	    font='JetBrains Mono',
 		    padding=10,
 	        ),
             widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
