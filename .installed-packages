@@ -1,150 +1,97 @@
-arch-install-scripts 24-2
-autoconf 2.71-1
-automake 1.16.4-1
-base 2-2
-bash-completion 2.11-2
-binutils 2.36.1-3
-bison 3.7.6-1
-brave-bin 1:1.28.106-1
-chewing-editor 0.1.1-8
-cpupower 5.13-1
-dbus-broker 29-1
-discord 0.0.15-1
-dmenu 5.0-1
-dnsmasq 2.85-1
-dotpac 0.4-4
-dunst 1.6.1-2
-efibootmgr 17-2
-emptty 0.6.0-1
-fakeroot 1.25.3-2
-fbgrab 1.5-1
-fcitx5 5.0.8-1
-fcitx5-chewing 5.0.5-1
-fcitx5-configtool 5.0.5-1
-fcitx5-gtk 5.0.7-1
-fcitx5-material-color 0.2.1-1
-fcitx5-nord 0.0.0.20210116-1
-fcitx5-qt 5.0.6-1
-ffmpegthumbnailer 2.2.2-2
-file 5.40-5
-findutils 4.8.0-1
-firefox 91.0.2-1
-flameshot 0.10.1-1
-flex 2.6.4-3
-folderpreview 0.4.3-1
-gawk 5.1.0-1
-gcc 11.1.0-1
-gettext 0.21-1
-git 2.33.0-1
-gparted 1.3.1-1
-grep 3.6-1
-groff 1.22.4-6
-gst-plugin-pipewire 1:0.3.34-1
-gtk-engine-murrine 0.98.2-4
-gtk2-patched-filechooser-icon-view 2.24.33-2
-gtk3-patched-filechooser-icon-view 1:3.24.30-1
-gucharmap 13.0.8-1
-gvfs 1.48.1-1
-gvfs-mtp 1.48.1-1
-gzip 1.10-3
-i3lock-color 2.13.c.4-1
-imv 4.3.0-1
-intel-ucode 20210608-1
-iptables-nft 1:1.8.7-1
-jp2a 1.1.0-2
-kitty 0.23.1-1
-lib32-alsa-plugins 1.2.5-1
-lib32-gnutls 3.7.2-1
-lib32-libxcomposite 0.4.5-1
-lib32-nvidia-utils 470.63.01-1
-lib32-pipewire 1:0.3.34-1
-libappimage 1.0.3-4
-libappindicator-gtk2 12.10.0.r296-1
-libappindicator-gtk3 12.10.0.r296-1
-libpipewire02 0.2.7-1
-libtool 2.4.6+42+gb88cebd5-16
-lightdm 1:1.30.0-4
-lightdm-gtk-greeter 1:2.0.8-1
-lightdm-gtk-greeter-settings 1.2.2-6
-limine 2.49.1-1
-linux-firmware 20210818.c46b8c3-1
-linux-zen 5.13.12.zen1-1
-linux-zen-headers 5.13.12.zen1-1
-lolcat 100.0.1-1
-lxappearance-gtk3 0.6.3-4
-m4 1.4.19-1
-make 4.3-3
-man-db 2.9.4-2
-mpv 1:0.33.1-2
-mtools 1:4.0.35-1
-mugshot 0.4.3-1
-nano 5.8-1
-nano-syntax-highlighting 2020.10.10-1
-net-tools 2.10-1
-networkmanager 1.32.10-1
-nitrogen 1.6.1-3
-notepadqq 1.4.8-5
-noto-fonts 20201226-2
-noto-fonts-cjk 20201206-2
-noto-fonts-emoji 20210625-1
-noto-fonts-extra 20201226-2
-ntfs-3g 2017.3.23-5
-nvidia-dkms 470.63.01-1
-nvidia-settings 470.63.01-1
-nvidia-utils 470.63.01-1
-obs-studio 27.0.1-2
-opentabletdriver 0.5.3.3-1
-p7zip 1:17.04-1
-p7zip-gui 16.02-5
-pacman 6.0.0-5
-papirus-folders-gui-bin 1.4-1
-patch 2.7.6-8
-pavucontrol 1:5.0-1
-picom-tryone-git 1623_Next.342.gee7d961_2021.08.24-1
-piper 0.6-1
-pipewire 1:0.3.34-1
-pipewire-alsa 1:0.3.34-1
-pipewire-media-session 1:0.3.34-1
-pipewire-pulse 1:0.3.34-1
-pkgconf 1.7.3-1
-polkit-gnome 0.105-8
-python-pip 20.3.4-1
-qbittorrent 4.3.7-1
-qemu-headless 6.1.0-1
-qt5-styleplugins 5.0.0.20170311-26
-qt5ct 1.3-1
-qtile 0.18.0-2
-reflector 2021.7.8-1
-rofi 1.6.1-1
-samba 4.14.7-1
-sed 4.8-1
-selectdefaultapplication-git r22.c752df6-1
-siji-ng 1.1-1
-steam-native-runtime 1.0.0.70-2
-sudo 1.9.7.p2-1
-texinfo 6.8-2
-thunar 4.16.8-1
-thunar-archive-plugin 0.4.0-3
-ttf-jetbrains-mono 2.242-1
-ttf-material-design-icons 4.0.0-1
-ttf-nerd-fonts-symbols-mono 2.1.0+36+gd0bf73a1-4
-tumbler 4.16.0-3
-virt-manager 3.2.0-1
-wget 1.21.1-1
-which 2.21-5
-wimlib 1.13.4-1
-wine 6.0-1
-winetricks 20210825-1
-wpgtk 6.5.2-6
-xdg-user-dirs 0.17-3
-xdotool 3.20210804.2-1
-xfce4-power-manager 4.16.0-3
-xorg-server-xephyr 1.20.13-2
-xorg-xinit 1.4.1-3
-xsettingsd 1.0.2-1
-yadm-git 3.1.1.r0.gf8abcd7-1
-yay 10.3.1-2
-zsh 5.8-1
-zsh-autosuggestions 0.7.0-1
-zsh-completions 0.33.0-1
-zsh-syntax-highlighting 0.7.1-1
+arch-install-scripts
+chewing-editor
+cpupower
+discord
+dmenu
+dunst
+efibootmgr
+fcitx5
+fcitx5-chewing
+fcitx5-configtool
+fcitx5-gtk
+fcitx5-material-color
+fcitx5-nord
+fcitx5-qt
+ffmpegthumbnailer
+flameshot
+git
+gparted
+gst-plugin-pipewire
+gtk-engine-murrine
+gucharmap
+gvfs
+gvfs-mtp
+gzip
+imv
+kitty
+lib32-alsa-plugins
+lib32-libxcomposite
+lib32-nvidia-utils
+lib32-pipewire
+libappimage
+libappindicator-gtk2
+libappindicator-gtk3
+libpipewire02
+lightdm
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+lolcat
+lxappearance-gtk3
+man-db
+mdadm
+mpv
+nano
+nano-syntax-highlighting
+net-tools
+networkmanager
+nitrogen
+notepadqq
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
+ntfs-3g
+nvidia-dkms
+nvidia-settings
+obs-studio
+p7zip
+patch
+pavucontrol
+piper
+pipewire
+pipewire-alsa
+pipewire-media-session
+pipewire-pulse
+polkit-gnome
+python-pip
+python-setuptools
+qbittorrent
+qt5ct
+qtile
+reflector
+rofi
+samba
+steam-native-runtime
+thunar
+thunar-archive-plugin
+ttf-jetbrains-mono
+ttf-nerd-fonts-symbols-mono
+tumbler
+wget
+which
+wimlib
+wine
+winetricks
+xarchiver
+xdg-user-dirs
+xdotool
+xfce4-power-manager
+xorg-server
+xorg-server-xephyr
+xorg-xinit
+xsettingsd
+yadm
+zsh
+zsh-autosuggestions
+zsh-completions
+zsh-syntax-highlighting

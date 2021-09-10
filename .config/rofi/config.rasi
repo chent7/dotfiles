@@ -1,17 +1,17 @@
 configuration {
+	theme: "wpg";
 	font: "JetBrains Mono 12";
 	width: 600;
 	show-icons: true;
 	display-drun: "Search";
-	theme: "~/.cache/wal/colors-rofi-dark";
 }
 
 element {
-	margin:                         0.5% 0% 0% 0%;
+    margin:                         0.5% 0% 0% 0%;
 }
 
 element-icon {
-    size:                           22px;
+    size:                           24px;
 }
 
 element-text {

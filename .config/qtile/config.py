@@ -63,7 +63,7 @@ groups = [
     Group(" COD", position=7),
     Group(" IMG", position=8),
     Group(" VID", position=9),
-    Group(" TOR", position=10, matches=[Match(title=["qBittorrent v4.3.7"])],),
+    Group(" TOR", position=10, matches=[Match(title=["qBittorrent v4.3.8"])],),
 ]
 
 for g in groups:
