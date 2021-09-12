@@ -1,2 +1,5 @@
 include "/usr/share/nano/*.nanorc"
 include "/usr/share/nano-syntax-highlighting/*.nanorc"
+
+set tabsize 4
+set tabstospaces
