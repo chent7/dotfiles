@@ -10,6 +10,18 @@ focus_new_windows = true
 
 [[keybind]]
 command = "Execute"
+value = "i3lock -e -B 4"
+modifier = ["Mod4"]
+key = "l"
+
+[[keybind]]
+command = "Execute"
+value = "rofi -show drun"
+modifier = ["modkey"]
+key = "d"
+
+[[keybind]]
+command = "Execute"
 value = "dmenu_run"
 modifier = ["modkey"]
 key = "p"
@@ -35,12 +47,6 @@ command = "Execute"
 value = "loginctl kill-session $XDG_SESSION_ID"
 modifier = ["modkey", "Shift"]
 key = "x"
-
-[[keybind]]
-command = "Execute"
-value = "slock"
-modifier = ["modkey", "Control"]
-key = "l"
 
 [[keybind]]
 command = "MoveToLastWorkspace"
