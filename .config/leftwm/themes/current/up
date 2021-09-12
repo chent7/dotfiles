@@ -1,0 +1,13 @@
+#!/bin/sh
+export SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+
+# kill polybar
+killall -q polybar
+while pgrep -x polybar >/dev/null; do sleep 1; done
+
+# Unload and load config
+echo "UnloadTheme" > $XDG_RUNTIME_DIR/leftwm/commands.pipe
+echo "LoadTheme $SCRIPTPATH/theme.toml" > $XDG_RUNTIME_DIR/leftwm/commands.pipe
+
+# launch polybar
+polybar -c .config/leftwm/themes/current/polybar.config bar

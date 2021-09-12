@@ -1,6 +1,7 @@
 #!/bin/sh
 # kill polybar
 killall -q polybar
+while pgrep -x polybar >/dev/null; do sleep 1; done
 
 # source pywal colors
 source ~/.cache/wal/colors.sh
