@@ -1,0 +1,13 @@
+# AUDIO
+XF86AudioRaiseVolume
+    pactl set-sink-volume 0 +5%
+
+XF86AudioLowerVolume
+    pactl set-sink-volume 0 -5%
+
+XF86AudioMute
+    pactl set-sink-mute 0 toggle
+
+# SXHKD RELOAD
+alt + Escape
+    pkill -USR1 -x sxhkd
