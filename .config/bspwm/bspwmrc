@@ -1,10 +1,20 @@
 #! /bin/sh
+# LOAD BSPWM KEYBINDS
+# (KEEP IN MIND THERE IS ALREADY AN INSTANCE OF SXHKD FOR GLOBAL KEYBINDS)
+pgrep -x sxhkd | wc -l >= 2 || sxhkd -c "$HOME/.config/sxhkd/bspwm" &
+
+# PYWAL COLORS
+. "$HOME/.cache/wal/colors.sh"
+
 # WORKSPACE NAMES
 bspc monitor -d I II III IV V VI VII VIII IX X
 
 # WINDOW DECORATION
 bspc config border_width            2
 bspc config window_gap              12
+bspc config normal_border_color     "$color0"
+bspc config active_border_color     "$color0"
+bspc config focused_border_color    "$color3"
 
 # WINDOW MANAGER OPTIONS
 bspc config split_ratio             0.50
@@ -19,9 +29,4 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 # LAUNCH POLYBAR
-./.scripts/polybar.sh bspwm
-
-# RELOAD SXHKD AND LOAD BSPWM KEYBINDS
-killall -q sxhkd
-while pgrep -x sxhkd >/dev/null; do sleep 1; done
-sxhkd ~/.config/sxhkd/bspwm &
+. "$HOME/.scripts/polybar.sh" bspwm

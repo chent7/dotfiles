@@ -14,7 +14,7 @@ dunst &
 
 # daemon
 fcitx5 -d &
-sxhkd -c ~/.config/sxhkd/audio &
+sxhkd &
 xfce4-power-manager --daemon &
 thunar --daemon &
 flameshot &
