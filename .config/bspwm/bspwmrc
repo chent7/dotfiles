@@ -1,4 +1,6 @@
-#! /bin/sh
+#!/bin/sh
+### THESE ARE NOT ALL THE OPTIONS, SEE BSPWM MAN PAGE
+
 # LOAD BSPWM KEYBINDS
 # (KEEP IN MIND THERE IS ALREADY AN INSTANCE OF SXHKD FOR GLOBAL KEYBINDS)
 pgrep -x sxhkd | wc -l >= 2 || sxhkd -c "$HOME/.config/sxhkd/bspwm" &
@@ -14,19 +16,17 @@ bspc config border_width            2
 bspc config window_gap              12
 bspc config normal_border_color     "$color0"
 bspc config active_border_color     "$color0"
-bspc config focused_border_color    "$color3"
+bspc config focused_border_color    "$color1"
 
 # WINDOW MANAGER OPTIONS
+bspc config pointer_modifier        mod1
 bspc config split_ratio             0.50
 bspc config automatic_scheme        longest_side
 bspc config focus_follows_pointer   true
 
 # APPLICATION RULES
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
+bspc rule -a "qBittorrent:qbittorrent:qBittorrent v4.3.8" desktop='^10'
 
 # LAUNCH POLYBAR
+# (LAUNCH YOUR BARS AFTER WORKSPACE NAMES ARE SET)
 . "$HOME/.scripts/polybar.sh" bspwm
