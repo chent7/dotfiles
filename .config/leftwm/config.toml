@@ -55,8 +55,8 @@ key = "r"
 [[keybind]]
 command = "Execute"
 value = "loginctl kill-session $XDG_SESSION_ID"
-modifier = ["modkey", "Shift"]
-key = "x"
+modifier = ["modkey", "Control"]
+key = "q"
 
 [[keybind]]
 command = "MoveWindowUp"
