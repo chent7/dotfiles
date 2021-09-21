@@ -11,4 +11,4 @@ ALPHA=aa;
 export background_a="#$ALPHA${background/'#'}"
 
 # launch polybar
-polybar bar
+polybar $1
