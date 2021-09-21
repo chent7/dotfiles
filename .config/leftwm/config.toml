@@ -1,12 +1,21 @@
+# WINDOW MANAGER CONFIGS
 modkey = "Mod1"
 mousekey = "Mod1"
 workspaces = []
 tags = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
-layouts = ["MainAndVertStack", "MainAndHorizontalStack", "MainAndDeck", "GridHorizontal", "EvenHorizontal", "EvenVertical", "Fibonacci", "CenterMain", "CenterMainBalanced", "Monocle", "RightWiderLeftStack", "LeftWiderRightStack"]
+layouts = ["MainAndVertStack"]
 scratchpad = []
 disable_current_tag_swap = false
 focus_behaviour = "Sloppy"
 focus_new_windows = true
+
+# KEYBINDS
+## APPLICATIONS
+[[keybind]]
+command = "Execute"
+value = "kitty"
+modifier = ["modkey"]
+key = "Return"
 
 [[keybind]]
 command = "Execute"
@@ -28,10 +37,11 @@ key = "p"
 
 [[keybind]]
 command = "Execute"
-value = "kitty"
-modifier = ["modkey", "Shift"]
-key = "Return"
+value = "flameshot gui"
+modifier = ["Mod4", "Shift"]
+key = "s"
 
+## WINDOW MANAGER ACTIONS
 [[keybind]]
 command = "CloseWindow"
 modifier = ["modkey", "Shift"]
@@ -49,99 +59,29 @@ modifier = ["modkey", "Shift"]
 key = "x"
 
 [[keybind]]
-command = "MoveToLastWorkspace"
-modifier = ["modkey", "Shift"]
-key = "w"
-
-[[keybind]]
-command = "SwapTags"
-modifier = ["modkey"]
-key = "w"
-
-[[keybind]]
 command = "MoveWindowUp"
 modifier = ["modkey", "Shift"]
-key = "k"
+key = "Up"
 
 [[keybind]]
 command = "MoveWindowDown"
 modifier = ["modkey", "Shift"]
-key = "j"
+key = "Down"
 
 [[keybind]]
 command = "MoveWindowTop"
-modifier = ["modkey"]
+modifier = ["modkey", "Shift"]
 key = "Return"
 
 [[keybind]]
-command = "FocusWindowUp"
-modifier = ["modkey"]
-key = "k"
-
-[[keybind]]
 command = "FocusWindowDown"
-modifier = ["modkey"]
-key = "j"
-
-[[keybind]]
-command = "NextLayout"
-modifier = ["modkey", "Control"]
-key = "k"
-
-[[keybind]]
-command = "PreviousLayout"
-modifier = ["modkey", "Control"]
-key = "j"
+modifier = ["modkey", "Shift"]
+key = "Tab"
 
 [[keybind]]
 command = "FocusWorkspaceNext"
 modifier = ["modkey"]
-key = "l"
-
-[[keybind]]
-command = "FocusWorkspacePrevious"
-modifier = ["modkey"]
-key = "h"
-
-[[keybind]]
-command = "MoveWindowUp"
-modifier = ["modkey", "Shift"]
-key = "Up"
-
-[[keybind]]
-command = "MoveWindowDown"
-modifier = ["modkey", "Shift"]
-key = "Down"
-
-[[keybind]]
-command = "FocusWindowUp"
-modifier = ["modkey"]
-key = "Up"
-
-[[keybind]]
-command = "FocusWindowDown"
-modifier = ["modkey"]
-key = "Down"
-
-[[keybind]]
-command = "NextLayout"
-modifier = ["modkey", "Control"]
-key = "Up"
-
-[[keybind]]
-command = "PreviousLayout"
-modifier = ["modkey", "Control"]
-key = "Down"
-
-[[keybind]]
-command = "FocusWorkspaceNext"
-modifier = ["modkey"]
-key = "Right"
-
-[[keybind]]
-command = "FocusWorkspacePrevious"
-modifier = ["modkey"]
-key = "Left"
+key = "Tab"
 
 [[keybind]]
 command = "GotoTag"
