@@ -1,0 +1,38 @@
+### BSPWM KEYBINDS
+# USER APPLICATIONS
+alt + Return
+	kitty
+alt + d
+    rofi -show drun
+alt + p
+	dmenu_run
+super + l
+    i3lock -e -B 4
+super + shift + s
+    flameshot gui
+
+# WINDOW MANAGER CONTROL
+alt + shift + q
+    bspc node -c
+alt + shift + r
+    bspc wm -r
+alt + control + q
+	bspc quit
+alt + shift + Tab
+    bspc node -f next.local.!hidden.window
+alt + t
+    bspc node -t tiled
+alt + f
+    bspc node -t floating
+alt + shift + f
+    bspc node -t fullscreen
+
+# ALTERNATE LAYOUT CONTROL
+alt + shift + Return
+	bspc node -s biggest.window
+
+# DESKTOPS
+alt + Tab
+	bspc desktop -f next.local
+alt + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
