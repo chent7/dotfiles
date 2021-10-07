@@ -18,6 +18,7 @@ sxhkd &
 xfce4-power-manager --daemon &
 thunar --daemon &
 flameshot &
+nm-applet &
 
 # wallpaper
 nitrogen --restore &

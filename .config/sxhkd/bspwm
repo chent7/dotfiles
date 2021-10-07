@@ -1,38 +1,53 @@
 ### BSPWM KEYBINDS
-# USER APPLICATIONS
+## USER APPLICATIONS
+# TERMINAL
 alt + Return
 	kitty
+# ROFI
 alt + d
     rofi -show drun
+# DMENU
 alt + p
 	dmenu_run
+# I3LOCK
 super + l
     i3lock -e -B 4
-super + shift + s
+# FLAMESHOT
+super + p
     flameshot gui
 
-# WINDOW MANAGER CONTROL
+## WINDOW MANAGER CONTROL
+# CLOSE WINDOW
 alt + shift + q
     bspc node -c
+# RELOAD BSPWM & SXHKD
 alt + shift + r
-    bspc wm -r
+    bspc wm -r && pkill -USR1 -x sxhkd
+# QUIT
 alt + control + q
 	bspc quit
+# FOCUS NEXT WINDOW
 alt + shift + Tab
     bspc node -f next.local.!hidden.window
+# SET TILING
 alt + t
     bspc node -t tiled
+# SET FLOATING
 alt + f
     bspc node -t floating
+# SET FULLSCREEN
 alt + shift + f
     bspc node -t fullscreen
 
-# ALTERNATE LAYOUT CONTROL
+## LAYOUT CONTROL
+# SET MASTER
 alt + shift + Return
 	bspc node -s biggest.window
 
-# DESKTOPS
+## DESKTOPS
+# NEXT DESKTOP
 alt + Tab
 	bspc desktop -f next.local
+# FOCUS DESKTOP # & SEND TO DESKTOP #
 alt + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'

@@ -21,11 +21,24 @@ bspc config focused_border_color    "$color1"
 # WINDOW MANAGER OPTIONS
 bspc config pointer_modifier        mod1
 bspc config split_ratio             0.50
-bspc config automatic_scheme        longest_side
+#bspc config automatic_scheme        longest_side
 bspc config focus_follows_pointer   true
+
+# BSP-LAYOUT
+bsp-layout set tall I --master-size 0.55
+bsp-layout set tall II --master-size 0.55
+bsp-layout set tall III --master-size 0.55
+bsp-layout set tall IV --master-size 0.55
+bsp-layout set tall V --master-size 0.55
+bsp-layout set tall VI --master-size 0.55
+bsp-layout set tall VII --master-size 0.55
+bsp-layout set tall VIII --master-size 0.55
+bsp-layout set tall IX --master-size 0.55
+bsp-layout set tall X --master-size 0.55
 
 # APPLICATION RULES
 bspc rule -a "qBittorrent:qbittorrent:qBittorrent v4.3.8" desktop='^10'
+bspc rule -a "Pavucontrol" state=floating
 
 # LAUNCH POLYBAR
 # (LAUNCH YOUR BARS AFTER WORKSPACE NAMES ARE SET)
