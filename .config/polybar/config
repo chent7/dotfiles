@@ -61,36 +61,19 @@ cursor-scroll = ns-resize
 
 [bar/bspwm]
 width = 100%
-height = 27
+height = 24
 fixed-center = false
 background = ${colors.background-alpha}
 foreground = ${colors.foreground}
 line-size = 3
-padding-left = 0
-padding-right = 2
-module-margin-left = 1
-module-margin-right = 2
-font-0 = cantarell regular:size=10;1
+module-margin = 1
+font-0 = "JetBrains Mono:pixelsize=9;2"
+font-1 = "Material Icons:pixelsize=9;2"
 modules-left = bspwm xwindow
 modules-right = pulsehdmi pulsejack date
 wm-restack = bspwm
 tray-position = right
 tray-padding = 2 
-
-[module/ewmh]
-type = internal/xworkspaces
-label-active = " %icon% %name%  "
-label-active-foreground = ${colors.foreground-alt}
-label-active-background = ${colors.background-alt}
-label-active-underline = ${colors.primary}
-label-occupied = " %icon% %name%  "
-label-occupied-underline = ${colors.secondary}
-label-urgent = " %icon% %name%  "
-label-urgent-foreground = ${colors.foreground}
-label-urgent-background = ${colors.background}
-label-urgent-underline  = ${colors.alert}
-label-empty = " %icon% %name%  "
-label-empty-foreground = ${colors.foreground}
 
 [module/xworkspaces]
 type = internal/xworkspaces
@@ -134,21 +117,32 @@ label = %title:0:30:...%
 [module/bspwm]
 type = internal/bspwm
 
-label-focused = %index%
-label-focused-background = ${colors.color2}
+ws-icon-0 = WEB;
+ws-icon-1 = GAM;
+ws-icon-2 = SOC;
+ws-icon-3 = FIL;
+ws-icon-4 = CON;
+ws-icon-5 = TER;
+ws-icon-6 = COD;
+ws-icon-7 = IMG;
+ws-icon-8 = VID;
+ws-icon-9 = TOR;
+ws-icon-font = 1
+
+label-focused = %icon% %name%
 label-focused-underline= ${colors.color1}
-label-focused-padding = 2
+label-focused-padding = 1
 
-label-occupied = %index%
-label-occupied-padding = 2
+label-occupied = %icon% %name%
+label-occupied-padding = 1
 
-label-urgent = %index%!
+label-urgent = %icon% %name%!
 label-urgent-background = ${colors.color2}
-label-urgent-padding = 2
+label-urgent-padding = 1
 
-label-empty = %index%
+label-empty = %icon% %name%
 label-empty-foreground = ${colors.foreground}
-label-empty-padding = 2
+label-empty-padding = 1
 
 [module/date]
 type = internal/date
@@ -185,13 +179,18 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 [module/pulsehdmi]
 type = internal/pulseaudio
 sink = alsa_output.pci-0000_01_00.1.hdmi-stereo-extra1
+format-volume = <label-volume> <ramp-volume> <bar-volume>
 
-format-volume = <label-volume> <bar-volume>
 label-volume = HDMI %percentage%%
 label-volume-foreground = ${root.foreground}
 
-label-muted = HDMI muted
+label-muted = HDMI muted 
 label-muted-foreground = #666
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-font = 1
 
 bar-volume-width = 10
 bar-volume-foreground-0 = ${xrdb:color1}
@@ -203,23 +202,25 @@ bar-volume-foreground-5 = ${xrdb:color1}
 bar-volume-foreground-6 = ${xrdb:color1}
 bar-volume-gradient = false
 bar-volume-indicator = |
-bar-volume-indicator-font = 2
 bar-volume-fill = ─
-bar-volume-fill-font = 2
 bar-volume-empty = ─
-bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground}
 
 [module/pulsejack]
 type = internal/pulseaudio
 sink = alsa_output.pci-0000_00_1b.0.iec958-stereo
+format-volume = <label-volume> <ramp-volume> <bar-volume>
 
-format-volume = <label-volume> <bar-volume>
 label-volume = JACK %percentage%%
 label-volume-foreground = ${root.foreground}
 
-label-muted = JACK muted
+label-muted = JACK muted 
 label-muted-foreground = #666
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-font = 1
 
 bar-volume-width = 10
 bar-volume-foreground-0 = ${xrdb:color1}
@@ -231,11 +232,8 @@ bar-volume-foreground-5 = ${xrdb:color1}
 bar-volume-foreground-6 = ${xrdb:color1}
 bar-volume-gradient = false
 bar-volume-indicator = |
-bar-volume-indicator-font = 2
 bar-volume-fill = ─
-bar-volume-fill-font = 2
 bar-volume-empty = ─
-bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground}
 
 [settings]

@@ -2,3 +2,4 @@
 alias ls='ls --color=auto'
 alias c='clear'
 alias n='nano'
+alias osr2mp4='python ~/Applications/osr2mp4-app/main.py'

@@ -9,7 +9,7 @@ pgrep -x sxhkd | wc -l >= 2 || sxhkd -c "$HOME/.config/sxhkd/bspwm" &
 . "$HOME/.cache/wal/colors.sh"
 
 # WORKSPACE NAMES
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor -d WEB GAM SOC FIL CON TER COD IMG VID TOR
 
 # WINDOW DECORATION
 bspc config border_width            2
