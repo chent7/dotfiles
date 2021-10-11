@@ -4,6 +4,8 @@
 # LOAD BSPWM KEYBINDS
 # (KEEP IN MIND THERE IS ALREADY AN INSTANCE OF SXHKD FOR GLOBAL KEYBINDS)
 pgrep -x sxhkd | wc -l >= 2 || sxhkd -c "$HOME/.config/sxhkd/bspwm" &
+# PICOM TENDS TO CRASH UNDER BSPWM
+pgrep -x picom || picom --experimental-backends
 
 # PYWAL COLORS
 . "$HOME/.cache/wal/colors.sh"
