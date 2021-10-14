@@ -1,9 +1,0 @@
-#!/bin/sh
-export SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
-
-# Unload and load config
-echo "UnloadTheme" > $XDG_RUNTIME_DIR/leftwm/commands.pipe
-echo "LoadTheme $SCRIPTPATH/theme.toml" > $XDG_RUNTIME_DIR/leftwm/commands.pipe
-
-# launch polybar
-.~/.scripts/polybar.sh leftwm
