@@ -10,12 +10,12 @@ XF86AudioMute
     pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 ## USER APPLICATIONS
-# ROFI
+# ROFI DRUN
 alt + d
     rofi -show drun
-# DMENU
+# ROFI RUN
 alt + p
-    dmenu_run
+    rofi -show run
 # I3LOCK
 super + l
     i3lock -e -B 4

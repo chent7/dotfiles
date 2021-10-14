@@ -1,5 +1,6 @@
 # dotfiles
 #### Screenshots:
+![alt text](https://github.com/chent7/dotfiles/blob/master/.screenshots/2021-10-15_01-19.png?raw=true)
 ![alt text](https://github.com/chent7/dotfiles/blob/master/.screenshots/2021-10-14_23-48.png?raw=true)
 
 #### Directions:

@@ -30,6 +30,7 @@ bspc config focus_follows_pointer   true
 bspc rule -a "qBittorrent:qbittorrent:qBittorrent v4.3.8" desktop='^10'
 bspc rule -a "Pavucontrol" state=floating
 bspc rule -a "imv" state=floating
+bspc rule -a "Wpg" state=floating
 
 # LAUNCH POLYBAR
 # (LAUNCH YOUR BARS AFTER WORKSPACE NAMES ARE SET)

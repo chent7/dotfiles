@@ -6,6 +6,9 @@ nvidia-settings -a '[gpu:0]/GPUPowerMizerMode=1' &
 # picom
 picom --experimental-backends &
 
+# pywal colors
+xrdb ~/.cache/wal/colors.Xresources &
+
 # notifications
 dunst &
 
