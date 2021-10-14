@@ -1,7 +1,6 @@
 # dotfiles
 #### Screenshots:
-![alt text](https://github.com/chent7/dotfiles/blob/master/.screenshots/2021-09-09_10-52.png?raw=true)
-![alt text](https://github.com/chent7/dotfiles/blob/master/.screenshots/2021-09-09_10-55.png?raw=true)
+![alt text](https://github.com/chent7/dotfiles/blob/master/.screenshots/2021-10-14_23-48.png?raw=true)
 
 #### Directions:
 - Deploy my dotfiles with `yadm`
@@ -11,6 +10,6 @@
 #### Note:
 - My dotfiles are designed for `lightdm` and won't work properly with `xinit` display managers like `emptty`
 - I use proprietary `nvidia-dkms` drivers
-- Window manager is `qtile`
+- Default Window manager is `bspwm`
 - Shell is `zsh`
 - `fcitx5` for input
