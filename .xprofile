@@ -16,7 +16,7 @@ dunst &
 fcitx5 -d &
 sxhkd &
 xfce4-power-manager --daemon &
-thunar --daemon &
+pcmanfm -d &
 flameshot &
 nm-applet &
 

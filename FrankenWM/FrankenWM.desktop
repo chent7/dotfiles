@@ -1,7 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=FrankenWM
-Comment="monsterwm's bastard child" or "not the wm your desktop needs, but the one it deserves"
-Exec=frankenwm
-Icon=frankenwm
-Type=XSession

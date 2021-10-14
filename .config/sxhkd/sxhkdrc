@@ -9,6 +9,20 @@ XF86AudioLowerVolume
 XF86AudioMute
     pactl set-sink-mute @DEFAULT_SINK@ toggle
 
+## USER APPLICATIONS
+# ROFI
+alt + d
+    rofi -show drun
+# DMENU
+alt + p
+    dmenu_run
+# I3LOCK
+super + l
+    i3lock -e -B 4
+# FLAMESHOT
+super + p
+    flameshot gui
+
 # SXHKD RELOAD
 super + Escape
     pkill -USR1 -x sxhkd

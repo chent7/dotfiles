@@ -1,20 +1,8 @@
 ### BSPWM KEYBINDS
-## USER APPLICATIONS
+## APPLICATIONS
 # TERMINAL
 alt + Return
 	kitty
-# ROFI
-alt + d
-    rofi -show drun
-# DMENU
-alt + p
-	dmenu_run
-# I3LOCK
-super + l
-    i3lock -e -B 4
-# FLAMESHOT
-super + p
-    flameshot gui
 
 ## WINDOW MANAGER CONTROL
 # CLOSE WINDOW
