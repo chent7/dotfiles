@@ -1,0 +1,145 @@
+artwork.cache.period 48
+artwork.cache_reset_time 1634623801
+artwork.enable_albumartorg 0
+artwork.enable_embedded 1
+artwork.enable_lastfm 0
+artwork.enable_localfolder 0
+artwork.enable_musicbrainz 0
+artwork.enable_wos 0
+artwork.filemask *cover*.jpg;*front*.jpg;*folder*.jpg;*cover*.png;*front*.png;*folder*.png
+artwork.missing_artwork 0
+artwork.nocover_path 
+artwork.scale_towards_longer 1
+artwork.scaled.cache_reset_time 1634623801
+cli_add_playlist_name Default
+cli_add_to_specific_playlist 0
+deadbeef_version 1.8.8
+discord_presence.enable 1
+discord_presence.end_timestamp 0
+discord_presence.hide_on_pause 0
+discord_presence.icon_script %artist% '/' %album%
+discord_presence.paused_icon 1
+discord_presence.playlist_on_state 0
+discord_presence.show_tracknum 1
+discord_presence.state_script %artist%
+discord_presence.title_script %title% $if(%ispaused%,'('paused')')
+filechooser.lastdir file:///home/pacer/Music
+gtkui.color.listview_group_text 36237 20046 16705
+gtkui.columns.playlist [{"title":"♫","id":"1","format":"%playstatus%","sort_format":"","size":"22","align":"0","color_override":"0","color":"#ff000000"},{"title":"Track","id":"-1","format":"%tracknumber%","sort_format":"","size":"54","align":"2","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"378","align":"0","color_override":"0","color":"#ff000000"},{"title":"Artist","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)","sort_format":"","size":"100","align":"0","color_override":"0","color":"#ffe0cbcb"},{"title":"Band / Album Artist","id":"-1","format":"$if(%album artist%,%album artist%,Unknown Artist)","sort_format":"","size":"136","align":"0","color_override":"0","color":"#ffe0cbcb"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"111","align":"0","color_override":"0","color":"#ff000000"}]
+gtkui.embolden_current_track 1
+gtkui.embolden_selected_tracks 1
+gtkui.eq.visible 0
+gtkui.font.listview_column_text JetBrains Mono 12
+gtkui.font.listview_group_text JetBrains Mono 12
+gtkui.font.listview_text JetBrains Mono 12
+gtkui.font.tabstrip_text JetBrains Mono 11
+gtkui.italic_current_track 0
+gtkui.layout.0.6.2 vbox expand="1 0" fill="1 1" homogeneous=0 {hsplitter locked=0 ratio=0.161734 pos=0 size2=0 {vbox expand="1 1" fill="1 1" homogeneous=1 {vsplitter locked=0 ratio=0.646316 pos=0 size2=0 {coverart {} vbox expand="1 1 1" fill="1 1 1" homogeneous=1 {spectrogram {} scope {} volumebar {} } } selproperties {} } tabbed_playlist hideheaders=0 width=1579 {} } hbox expand="0 1" fill="1 1" homogeneous=0 {playtb {} waveform_seekbar {} } } 
+gtkui.override_listview_colors 1
+gtkui.override_tabstrip_colors 1
+gtkui.playlist.group_by_tf "%album artist% - ['['%year%']' ]%album%"
+gtkui.selection_properties.show_headers 1
+gtkui.statusbar.visible 1
+gtkui.tabscroll 0
+gtkui.tabstrip_embolden_playing 0
+gtkui.titlebar_playing_tf %artist% - %title% - DeaDBeeF-%_deadbeef_version%
+gtkui.titlebar_stopped_tf DeaDBeeF-%_deadbeef_version%
+hotkey.key01 "Ctrl f" 0 0 find
+hotkey.key02 "Ctrl o" 0 0 open_files
+hotkey.key03 "Ctrl q" 0 0 quit
+hotkey.key04 "Ctrl n" 0 0 new_playlist
+hotkey.key05 "Ctrl a" 0 0 select_all
+hotkey.key06 "Escape" 0 0 deselect_all
+hotkey.key07 "Ctrl m" 0 0 toggle_stop_after_current
+hotkey.key08 "Ctrl j" 0 0 jump_to_current_track
+hotkey.key09 "F1" 0 0 help
+hotkey.key10 "Delete" 1 0 remove_from_playlist
+hotkey.key11 "Ctrl w" 0 0 remove_current_playlist
+hotkey.key13 "Alt Return" 1 0 track_properties
+hotkey.key14 "Return" 0 0 play
+hotkey.key15 "Ctrl p" 0 0 toggle_pause
+hotkey.key16 "Alt 1" 0 0 playlist1
+hotkey.key17 "Alt 2" 0 0 playlist2
+hotkey.key18 "Alt 3" 0 0 playlist3
+hotkey.key19 "Alt 4" 0 0 playlist4
+hotkey.key20 "Alt 5" 0 0 playlist5
+hotkey.key21 "Alt 6" 0 0 playlist6
+hotkey.key22 "Alt 7" 0 0 playlist7
+hotkey.key23 "Alt 8" 0 0 playlist8
+hotkey.key24 "Alt 9" 0 0 playlist9
+hotkey.key25 "Alt 0" 0 0 playlist10
+hotkey.key26 z 0 0 prev
+hotkey.key27 x 0 0 play
+hotkey.key28 c 0 0 toggle_pause
+hotkey.key29 v 0 0 stop
+hotkey.key30 b 0 0 next
+hotkey.key31 n 0 0 playback_random
+hotkey.key32 "Ctrl k" 0 0 toggle_stop_after_album
+hotkeys_created 1
+ignore_archives 1
+mainwin.geometry.h 1028
+mainwin.geometry.w 938
+mainwin.geometry.x 12
+mainwin.geometry.y 36
+network.proxy.port 8080
+output_plugin pipewire
+playback.loop 1
+playback.volume -8.000000
+playlist.current 0
+playlist.cursor.0 126
+playlist.scroll.0 3150
+playlist.scroll.cursorfollowplayback 1
+playlist.tab.00000 Music
+prefwin.geometry.h 608
+prefwin.geometry.w 1103
+prefwin.geometry.x 406
+prefwin.geometry.y 234
+resume.paused 0
+resume.playlist 0
+resume.position 0.0928798
+resume.track 123
+spectrogram.color.gradient_00 65535 0 0
+spectrogram.color.gradient_01 65535 32896 0
+spectrogram.color.gradient_02 65535 65535 0
+spectrogram.color.gradient_03 32896 65535 30840
+spectrogram.color.gradient_04 0 38036 41120
+spectrogram.color.gradient_05 0 8224 25700
+spectrogram.color.gradient_06 0 0 0
+spectrogram.db_range 120
+spectrogram.log_scale 0
+spectrogram.num_colors 7
+spectrogram.refresh_interval 25
+streamer.8_to_16 0
+streamer.samplerate 44100
+streamer.samplerate_mult_44 44100
+streamer.samplerate_mult_48 48000
+waveform.bg_alpha 65535
+waveform.bg_color_b 1285
+waveform.bg_color_g 1285
+waveform.bg_color_r 1285
+waveform.border_width 1
+waveform.cache_enabled 1
+waveform.cursor_width 3
+waveform.display_rms 1
+waveform.fg_alpha 65535
+waveform.fg_color_b 21074
+waveform.fg_color_g 25186
+waveform.fg_color_r 45489
+waveform.fg_rms_alpha 65535
+waveform.fg_rms_color_b 5000
+waveform.fg_rms_color_g 5000
+waveform.fg_rms_color_r 5000
+waveform.font_size 18
+waveform.log_enabled 0
+waveform.max_file_length 180
+waveform.mix_to_mono 1
+waveform.num_samples 2048
+waveform.pb_alpha 20000
+waveform.pb_color_b 52171
+waveform.pb_color_g 52171
+waveform.pb_color_r 57568
+waveform.refresh_interval 33
+waveform.render_method 2
+waveform.scroll_enabled 1
+waveform.shade_waveform 0
+waveform.soundcloud_style 1
