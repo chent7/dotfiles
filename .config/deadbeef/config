@@ -34,7 +34,7 @@ gtkui.font.listview_group_text JetBrains Mono 12
 gtkui.font.listview_text JetBrains Mono 12
 gtkui.font.tabstrip_text JetBrains Mono 11
 gtkui.italic_current_track 0
-gtkui.layout.0.6.2 vbox expand="0 1 0" fill="1 1 1" homogeneous=0 {quick_search {} hsplitter locked=0 ratio=0.153277 pos=0 size2=0 {vbox expand="1 1" fill="1 1" homogeneous=1 {vsplitter locked=0 ratio=0.793926 pos=0 size2=0 {coverart {} vbox expand="1 1 1" fill="1 1 1" homogeneous=1 {volumebar {} spectrogram {} scope {} } } selproperties {} } playlist hideheaders=0 width=1596 {} } hbox expand="0 1" fill="1 1" homogeneous=0 {playtb {} waveform_seekbar {} } } 
+gtkui.layout.0.6.2 vbox expand="0 1 0" fill="1 1 1" homogeneous=0 {quick_search {} hsplitter locked=0 ratio=0.180233 pos=0 size2=0 {vbox expand="1 1" fill="1 1" homogeneous=1 {vsplitter locked=0 ratio=0.713666 pos=0 size2=0 {coverart {} vbox expand="1 1 1" fill="1 1 1" homogeneous=1 {volumebar {} spectrogram {} scope {} } } selproperties {} } tabs active=0 num_tabs=2 tab000="Playlist" tab001="Playlist browser" {playlist hideheaders=0 width=1540 {} pltbrowser {} } } hbox expand="0 1" fill="1 1" homogeneous=0 {playtb {} waveform_seekbar {} } } 
 gtkui.override_listview_colors 1
 gtkui.override_tabstrip_colors 1
 gtkui.playlist.group_by_tf "%album artist% - ['['%year%']' ]%album%"
@@ -84,22 +84,25 @@ mainwin.geometry.y 36
 network.proxy.port 8080
 output_plugin pipewire
 playback.loop 1
-playback.volume -8.000000
+playback.volume -9.000000
 playlist.current 0
-playlist.cursor.0 25
+playlist.cursor.0 261
 playlist.cursor.1 0
-playlist.scroll.0 0
+playlist.cursor.2 0
+playlist.scroll.0 12639
 playlist.scroll.1 0
+playlist.scroll.2 0
 playlist.scroll.cursorfollowplayback 1
 playlist.tab.00000 Music
+playlist.tab.00001 Quick Search
 prefwin.geometry.h 608
 prefwin.geometry.w 1103
 prefwin.geometry.x 406
 prefwin.geometry.y 234
 resume.paused 1
 resume.playlist 0
-resume.position 36.911644
-resume.track 798
+resume.position 31.393484
+resume.track 261
 spectrogram.color.gradient_00 65535 0 0
 spectrogram.color.gradient_01 65535 32896 0
 spectrogram.color.gradient_02 65535 65535 0

@@ -27,10 +27,11 @@ bspc config split_ratio             0.50
 bspc config focus_follows_pointer   true
 
 # APPLICATION RULES
-bspc rule -a "qBittorrent:qbittorrent:qBittorrent v4.3.8" desktop='^10'
+bspc rule -a "qBittorrent:qbittorrent:qBittorrent v4.3.9" desktop='^10'
 bspc rule -a "Pavucontrol" state=floating
 bspc rule -a "imv" state=floating
 bspc rule -a "Wpg" state=floating
+bspc rule -a "*:*:Picture in picture" state=floating
 
 # LAUNCH POLYBAR
 # (LAUNCH YOUR BARS AFTER WORKSPACE NAMES ARE SET)

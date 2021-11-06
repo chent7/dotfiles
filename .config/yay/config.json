@@ -1,7 +1,6 @@
 {
 	"aururl": "https://aur.archlinux.org",
 	"buildDir": "/home/pacer/.cache/yay",
-	"absdir": "/home/pacer/.cache/yay/abs",
 	"editor": "",
 	"editorflags": "",
 	"makepkgbin": "makepkg",
@@ -34,7 +33,7 @@
 	"provides": true,
 	"pgpfetch": true,
 	"upgrademenu": true,
-	"cleanmenu": true,
+	"cleanmenu": false,
 	"diffmenu": false,
 	"editmenu": false,
 	"combinedupgrade": false,
