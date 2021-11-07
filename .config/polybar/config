@@ -1,36 +1,7 @@
-;==========================================================
-;
-;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
-;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
-;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
-;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
-;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
-;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
-;
-;==========================================================
+; import colors and modules section
 
-[colors]
-; import pywal colors from environment, see polybar.sh script
-background = ${env:background}
-background-alpha = ${env:background_alpha}
-foreground = ${env:foreground}
-
-color0 = ${env:color0}
-color1 = ${env:color1}
-color2 = ${env:color2}
-color3 = ${env:color3}
-color4 = ${env:color4}
-color5 = ${env:color5}
-color6 = ${env:color6}
-color7 = ${env:color7}
-color8 = ${env:color8}
-color9 = ${env:color9}
-color10 = ${env:color10}
-color11 = ${env:color11}
-color12 = ${env:color12}
-color13 = ${env:color13}
-color14 = ${env:color14}
-color15 = ${env:color15}
+include-file = $HOME/.config/polybar/colors
+include-file = $HOME/.config/polybar/modules
 
 [bar/bspwm]
 width = 100%
@@ -44,136 +15,10 @@ font-0 = "JetBrains Mono:pixelsize=10;2"
 font-1 = "Material Icons:pixelsize=10;2"
 font-2 = "Noto Sans CJK TC:pixelsize=10;1"
 modules-left = bspwm xwindow
-modules-right = pulsehdmi pulsejack date
+modules-right = pulseaudio date
 wm-restack = bspwm
 tray-position = right
 tray-padding = 2 
-
-[module/xwindow]
-type = internal/xwindow
-label = %title:0:30:...%
-
-[module/bspwm]
-type = internal/bspwm
-
-ws-icon-0 = WEB;
-ws-icon-1 = GAM;
-ws-icon-2 = SOC;
-ws-icon-3 = FIL;
-ws-icon-4 = CON;
-ws-icon-5 = TER;
-ws-icon-6 = COD;
-ws-icon-7 = IMG;
-ws-icon-8 = VID;
-ws-icon-9 = TOR;
-ws-icon-font = 1
-
-label-focused = %icon% %name%
-label-focused-underline= ${colors.color1}
-label-focused-padding = 1
-
-label-occupied = %icon% %name%
-label-occupied-padding = 1
-
-label-urgent = %icon% %name%!
-label-urgent-background = ${colors.color2}
-label-urgent-padding = 1
-
-label-empty = %icon% %name%
-label-empty-foreground = ${colors.foreground}
-label-empty-padding = 1
-
-[module/date]
-type = internal/date
-date = %%{F#99}%m/%d/%Y%%{F-}  %%{F#fff}%I:%M %p%{F-}
-date-alt = %%{F#fff}%A, %B %d, %Y  %%{F#fff}%I:%M:%{F#666}%%{F#fba922}%S%%{F-} %p
-
-[module/pulseaudio]
-type = internal/pulseaudio
-
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
-label-volume-foreground = ${root.foreground}
-
-label-muted = 🔇 muted
-label-muted-foreground = #666
-
-bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground-alt}
-
-[module/pulsehdmi]
-type = internal/pulseaudio
-sink = alsa_output.pci-0000_01_00.1.hdmi-stereo-extra1
-format-volume = <label-volume> <ramp-volume> <bar-volume>
-
-label-volume = HDMI %percentage%%
-label-volume-foreground = ${root.foreground}
-
-label-muted = HDMI muted 
-label-muted-foreground = #666
-
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
-ramp-volume-font = 1
-
-bar-volume-width = 10
-bar-volume-foreground-0 = ${xrdb:color1}
-bar-volume-foreground-1 = ${xrdb:color1}
-bar-volume-foreground-2 = ${xrdb:color1}
-bar-volume-foreground-3 = ${xrdb:color1}
-bar-volume-foreground-4 = ${xrdb:color1}
-bar-volume-foreground-5 = ${xrdb:color1}
-bar-volume-foreground-6 = ${xrdb:color1}
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-fill = ─
-bar-volume-empty = ─
-bar-volume-empty-foreground = ${colors.foreground}
-
-[module/pulsejack]
-type = internal/pulseaudio
-sink = alsa_output.pci-0000_00_1b.0.iec958-stereo
-format-volume = <label-volume> <ramp-volume> <bar-volume>
-
-label-volume = JACK %percentage%%
-label-volume-foreground = ${root.foreground}
-
-label-muted = JACK muted 
-label-muted-foreground = #666
-
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
-ramp-volume-font = 1
-
-bar-volume-width = 10
-bar-volume-foreground-0 = ${xrdb:color1}
-bar-volume-foreground-1 = ${xrdb:color1}
-bar-volume-foreground-2 = ${xrdb:color1}
-bar-volume-foreground-3 = ${xrdb:color1}
-bar-volume-foreground-4 = ${xrdb:color1}
-bar-volume-foreground-5 = ${xrdb:color1}
-bar-volume-foreground-6 = ${xrdb:color1}
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-fill = ─
-bar-volume-empty = ─
-bar-volume-empty-foreground = ${colors.foreground}
 
 [settings]
 screenchange-reload = true

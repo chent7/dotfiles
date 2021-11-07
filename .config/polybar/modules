@@ -1,0 +1,129 @@
+; modules configuration for polybar
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:30:...%
+
+[module/date]
+type = internal/date
+date = %%{F#99}%m/%d/%Y%%{F-}  %%{F#fff}%I:%M %p%{F-}
+date-alt = %%{F#fff}%A, %B %d, %Y  %%{F#fff}%I:%M:%{F#666}%%{F#fba922}%S%%{F-} %p
+
+[module/bspwm]
+type = internal/bspwm
+
+ws-icon-0 = WEB;
+ws-icon-1 = GAM;
+ws-icon-2 = SOC;
+ws-icon-3 = FIL;
+ws-icon-4 = CON;
+ws-icon-5 = TER;
+ws-icon-6 = COD;
+ws-icon-7 = IMG;
+ws-icon-8 = VID;
+ws-icon-9 = TOR;
+ws-icon-font = 1
+
+label-focused = %icon% %name%
+label-focused-underline= ${colors.color1}
+label-focused-padding = 1
+
+label-occupied = %icon% %name%
+label-occupied-padding = 1
+
+label-urgent = %icon% %name%!
+label-urgent-background = ${colors.color2}
+label-urgent-padding = 1
+
+label-empty = %icon% %name%
+label-empty-foreground = ${colors.foreground}
+label-empty-padding = 1
+
+[module/pulseaudio]
+type = internal/pulseaudio
+format-volume = <label-volume> <ramp-volume> <bar-volume>
+
+label-volume = VOL %percentage%%
+label-volume-foreground = ${root.foreground}
+
+label-muted = VOL muted 
+label-muted-foreground = #666
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-font = 1
+
+bar-volume-width = 10
+bar-volume-foreground-0 = ${xrdb:color1}
+bar-volume-foreground-1 = ${xrdb:color1}
+bar-volume-foreground-2 = ${xrdb:color1}
+bar-volume-foreground-3 = ${xrdb:color1}
+bar-volume-foreground-4 = ${xrdb:color1}
+bar-volume-foreground-5 = ${xrdb:color1}
+bar-volume-foreground-6 = ${xrdb:color1}
+bar-volume-gradient = false
+bar-volume-indicator = |
+bar-volume-fill = ─
+bar-volume-empty = ─
+bar-volume-empty-foreground = ${colors.foreground}
+
+[module/pulsejack]
+type = internal/pulseaudio
+sink = alsa_output.pci-0000_00_1b.0.iec958-stereo
+format-volume = <label-volume> <ramp-volume> <bar-volume>
+
+label-volume = JACK %percentage%%
+label-volume-foreground = ${root.foreground}
+
+label-muted = JACK muted 
+label-muted-foreground = #666
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-font = 1
+
+bar-volume-width = 10
+bar-volume-foreground-0 = ${xrdb:color1}
+bar-volume-foreground-1 = ${xrdb:color1}
+bar-volume-foreground-2 = ${xrdb:color1}
+bar-volume-foreground-3 = ${xrdb:color1}
+bar-volume-foreground-4 = ${xrdb:color1}
+bar-volume-foreground-5 = ${xrdb:color1}
+bar-volume-foreground-6 = ${xrdb:color1}
+bar-volume-gradient = false
+bar-volume-indicator = |
+bar-volume-fill = ─
+bar-volume-empty = ─
+bar-volume-empty-foreground = ${colors.foreground}
+
+[module/pulsehdmi]
+type = internal/pulseaudio
+sink = alsa_output.pci-0000_01_00.1.hdmi-stereo-extra1
+format-volume = <label-volume> <ramp-volume> <bar-volume>
+
+label-volume = HDMI %percentage%%
+label-volume-foreground = ${root.foreground}
+
+label-muted = HDMI muted 
+label-muted-foreground = #666
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-font = 1
+
+bar-volume-width = 10
+bar-volume-foreground-0 = ${xrdb:color1}
+bar-volume-foreground-1 = ${xrdb:color1}
+bar-volume-foreground-2 = ${xrdb:color1}
+bar-volume-foreground-3 = ${xrdb:color1}
+bar-volume-foreground-4 = ${xrdb:color1}
+bar-volume-foreground-5 = ${xrdb:color1}
+bar-volume-foreground-6 = ${xrdb:color1}
+bar-volume-gradient = false
+bar-volume-indicator = |
+bar-volume-fill = ─
+bar-volume-empty = ─
+bar-volume-empty-foreground = ${colors.foreground}

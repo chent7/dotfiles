@@ -1,0 +1,23 @@
+; import pywal colors from environment, see polybar.sh script
+
+[colors]
+background = ${env:background}
+background-alpha = ${env:background_alpha}
+foreground = ${env:foreground}
+
+color0 = ${env:color0}
+color1 = ${env:color1}
+color2 = ${env:color2}
+color3 = ${env:color3}
+color4 = ${env:color4}
+color5 = ${env:color5}
+color6 = ${env:color6}
+color7 = ${env:color7}
+color8 = ${env:color8}
+color9 = ${env:color9}
+color10 = ${env:color10}
+color11 = ${env:color11}
+color12 = ${env:color12}
+color13 = ${env:color13}
+color14 = ${env:color14}
+color15 = ${env:color15}
