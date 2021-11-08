@@ -1,11 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 # kill polybar
 killall -q polybar
 while pgrep -x polybar >/dev/null; do sleep 1; done
 
 # export envar for pywal colors instead of sourcing 
 # so colors hold after reboot
-ALPHA=cc;
+ALPHA=bb;
 export background="${background}"
 export background_alpha="#$ALPHA${background/'#'}"
 export foreground="${foreground}"

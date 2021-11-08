@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # nvidia
 nvidia-settings --load-config-only &
 nvidia-settings -a '[gpu:0]/GPUPowerMizerMode=1' &

@@ -5,14 +5,14 @@ include-file = $HOME/.config/polybar/modules
 
 [bar/bspwm]
 width = 100%
-height = 24
+height = 28
 fixed-center = false
 background = ${colors.background-alpha}
 foreground = ${colors.foreground}
 line-size = 3
 module-margin = 1
-font-0 = "JetBrains Mono:pixelsize=10;2"
-font-1 = "Material Icons:pixelsize=10;2"
+font-0 = "JetBrains Mono:pixelsize=10;3"
+font-1 = "Material Icons:pixelsize=10;3"
 font-2 = "Noto Sans CJK TC:pixelsize=10;1"
 modules-left = bspwm xwindow
 modules-right = cpu memory network pulseaudio date

@@ -1,6 +1,4 @@
-#!/bin/sh
-### THESE ARE NOT ALL THE OPTIONS, SEE BSPWM MAN PAGE
-
+#!/bin/bash
 # LOAD BSPWM KEYBINDS
 # (KEEP IN MIND THERE IS ALREADY AN INSTANCE OF SXHKD FOR GLOBAL KEYBINDS)
 pgrep -x sxhkd | wc -l >= 2 || sxhkd -c "$HOME/.config/sxhkd/bspwm" &
@@ -35,4 +33,4 @@ bspc rule -a "*:*:Picture in picture" state=floating
 
 # LAUNCH POLYBAR
 # (LAUNCH YOUR BARS AFTER WORKSPACE NAMES ARE SET)
-. "$HOME/.scripts/polybar.sh" bspwm
+. "$HOME/.config/scripts/polybar.sh" bspwm

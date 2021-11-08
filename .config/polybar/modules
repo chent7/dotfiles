@@ -21,7 +21,7 @@ interval = 1
 
 format-connected = <label-connected>
 format-disconnected = <label-disconnected>
-label-connected = NET ↓%downspeed%
+label-connected = NET %downspeed% ↓
 label-disconnected = NET ⚠
 
 [module/xwindow]
