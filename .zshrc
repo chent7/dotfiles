@@ -23,7 +23,7 @@ compinit
 _comp_options+=(globdots)
 
 # alias
-[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
+[ -f "$HOME/.config/scripts/aliasrc" ] && source "$HOME/.config/scripts/aliasrc"
 
 # plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
