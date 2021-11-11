@@ -10,7 +10,7 @@ picom --experimental-backends &
 xrdb ~/.cache/wal/colors.Xresources &
 
 # notifications
-dunst &
+# dunst &
 
 # polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &

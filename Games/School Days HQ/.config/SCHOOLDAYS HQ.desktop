@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=SCHOOLDAYS HQ
+Type=Application
+Exec="/home/pacer/Games/School Days HQ/.config/schooldays-hq.sh"
+Icon=/home/pacer/Games/School Days HQ/.config/1.ico
+StartupWMClass=SCHOOLDAYS HQ.exe
+Categories=Games

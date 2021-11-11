@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=SHINYDAYS
+Type=Application
+Exec="/home/pacer/Games/Shiny Days/.config/shinydays.sh"
+Icon=/home/pacer/Games/Shiny Days/.config/1.ico
+StartupWMClass=SHINYDAYS.exe
+Categories=Games

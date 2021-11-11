@@ -12,7 +12,7 @@ pgrep -x picom || picom --experimental-backends
 bspc monitor -d WEB GAM SOC FIL CON TER COD IMG VID TOR
 
 # WINDOW DECORATIONS
-bspc config border_width            2
+bspc config border_width            4
 bspc config window_gap              12
 bspc config normal_border_color     "$color0"
 bspc config active_border_color     "$color0"

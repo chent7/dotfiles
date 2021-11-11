@@ -6,3 +6,6 @@ GTK_IM_MODULE=fcitx
 QT_IM_MODULE=fcitx
 XMODIFIERS=@im=fcitx
 SDL_IM_MODULE=fcitx
+
+# android-studio
+_JAVA_AWT_WM_NONREPARENTING=1

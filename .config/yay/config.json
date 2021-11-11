@@ -33,7 +33,7 @@
 	"provides": true,
 	"pgpfetch": true,
 	"upgrademenu": true,
-	"cleanmenu": false,
+	"cleanmenu": true,
 	"diffmenu": false,
 	"editmenu": false,
 	"combinedupgrade": false,
