@@ -21,6 +21,10 @@ zstyle ':completion:*' menu select
 setopt COMPLETE_ALIASES
 compinit
 _comp_options+=(globdots)
+CASE_SENSITIVE="true"
+__git_files () {
+    _wanted files expl 'local files' _files
+}
 
 # alias
 [ -f "$HOME/.config/scripts/aliasrc" ] && source "$HOME/.config/scripts/aliasrc"
