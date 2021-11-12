@@ -5,7 +5,6 @@ arch-install-scripts
 autoconf
 autokey-gtk
 automake
-baidunetdisk-bin
 base
 binutils
 bison
@@ -26,7 +25,6 @@ deadbeef-plugin-spectrogram-gtk2-git
 discord
 dnsmasq
 dotpac
-dunst
 efibootmgr
 etcher-bin
 fakeroot
@@ -34,7 +32,6 @@ fcitx5
 fcitx5-chewing
 fcitx5-configtool
 fcitx5-gtk
-fcitx5-material-color
 fcitx5-nord
 fcitx5-qt
 ffmpegthumbnailer
@@ -42,6 +39,7 @@ file
 findutils
 flameshot
 flex
+garcon
 gawk
 gcc
 gcolor3
@@ -83,7 +81,6 @@ libappimage
 libappindicator-gtk2
 libappindicator-gtk3
 libgee
-libpipewire02
 libtool
 libvirt
 lightdm
@@ -150,7 +147,6 @@ reflector
 rofi
 samba
 sed
-selectdefaultapplication-git
 shntool
 spek-git
 steam-native-runtime
@@ -161,11 +157,13 @@ testdisk
 texinfo
 thermald
 thunar
+thunar-volman
 tk
 ttaenc
 ttf-jetbrains-mono
 ttf-material-design-icons
 ttf-nerd-fonts-symbols-mono
+tumbler
 virt-manager
 vivaldi-ffmpeg-codecs
 vte3
@@ -179,7 +177,14 @@ xdg-desktop-portal
 xdg-desktop-portal-kde
 xdg-user-dirs
 xdotool
+xfce4-appfinder
+xfce4-panel
 xfce4-power-manager
+xfce4-session
+xfce4-settings
+xfdesktop
+xfwm4
+xfwm4-themes
 xorg-server
 xorg-server-xephyr
 xorg-util-macros

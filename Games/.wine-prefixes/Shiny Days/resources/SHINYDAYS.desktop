@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=SHINYDAYS
+Type=Application
+Exec="$HOME/Games/.wine-prefixes/Shiny Days/resources/shinydays.sh"
+Icon=$HOME/Games/.wine-prefixes/Shiny Days/resources/1.ico
+StartupWMClass=SHINYDAYS.exe
+Categories=Games

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=osu!
+Type=Application
+Exec="$HOME/Games/.wine-prefixes/osu!/resources/osu.sh"
+Icon=$HOME/Games/.wine-prefixes/osu!/resources/icon.png
+StartupWMClass=osu!.exe
+Categories=Games
