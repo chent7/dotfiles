@@ -2,7 +2,7 @@
 # /home/pacer/.nvidia-settings-rc
 #
 # Configuration file for nvidia-settings - the NVIDIA X Server Settings utility
-# Generated on Thu Nov 11 14:33:15 2021
+# Generated on Sat Nov 13 16:32:21 2021
 #
 
 # ConfigProperties:
@@ -48,7 +48,7 @@ Timer = PowerMizer_Monitor_(GPU_0),Yes,1000
 [DPY:HDMI-0]/Dithering=0
 [DPY:HDMI-0]/DitheringMode=0
 [DPY:HDMI-0]/DitheringDepth=0
-[DPY:HDMI-0]/DigitalVibrance=250
+[DPY:HDMI-0]/DigitalVibrance=0
 [DPY:HDMI-0]/ColorSpace=0
 [DPY:HDMI-0]/ColorRange=0
 [DPY:HDMI-0]/SynchronousPaletteUpdates=0
