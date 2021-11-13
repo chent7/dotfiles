@@ -19,7 +19,6 @@ xrdb ~/.cache/wal/colors.Xresources &
 fcitx5 -d &
 sxhkd &
 xfce4-power-manager --daemon &
-pcmanfm -d &
 flameshot &
 nm-applet &
 
