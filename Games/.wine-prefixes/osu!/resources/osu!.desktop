@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Name=osu!
 Type=Application
-Exec="$HOME/Games/.wine-prefixes/osu!/resources/osu.sh"
+Exec=/bin/bash -c "$HOME/Games/.wine-prefixes/osu!/resources/osu.sh"
 Icon=osu-icon.png
 StartupWMClass=osu!.exe
 Categories=Games
