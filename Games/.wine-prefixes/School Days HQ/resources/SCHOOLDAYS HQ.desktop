@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Name=SCHOOLDAYS HQ
 Type=Application
-Exec="$HOME/Games/.wine-prefixes/School Days HQ/resources/schooldays-hq.sh"
-Icon=$HOME/Games/.wine-prefixes/School Days HQ/resources/1.ico
+Exec=/bin/bash -c "$HOME/Games/.wine-prefixes/School Days HQ/resources/schooldays-hq.sh"
+Icon=schooldays-hq-icon.ico
 StartupWMClass=SCHOOLDAYS HQ.exe
 Categories=Games

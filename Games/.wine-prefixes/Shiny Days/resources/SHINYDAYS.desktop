@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Name=SHINYDAYS
 Type=Application
-Exec="$HOME/Games/.wine-prefixes/Shiny Days/resources/shinydays.sh"
-Icon=$HOME/Games/.wine-prefixes/Shiny Days/resources/1.ico
+Exec=/bin/bash -c "$HOME/Games/.wine-prefixes/Shiny Days/resources/shinydays.sh"
+Icon=shinydays-icon.ico
 StartupWMClass=SHINYDAYS.exe
 Categories=Games
