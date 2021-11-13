@@ -3,7 +3,7 @@ export PATH="$PATH:/home/pacer/.local/bin"
 
 # colors
 autoload -U colors && colors
-source ~/.cache/wal/colors-tty.sh
+#source ~/.cache/wal/colors-tty.sh
 
 # prompt
 PS1="%B%{$fg[red]%} %~ %{$reset_color%}>%b "
