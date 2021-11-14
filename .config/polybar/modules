@@ -28,6 +28,36 @@ label-disconnected = NET ⚠
 type = internal/xwindow
 label = %title:0:30:...%
 
+[module/xworkspaces]
+type = internal/xworkspaces
+
+icon-0 = WEB;
+icon-1 = GAM;
+icon-2 = SOC;
+icon-3 = FIL;
+icon-4 = CON;
+icon-5 = TER;
+icon-6 = COD;
+icon-7 = IMG;
+icon-8 = VID;
+icon-9 = TOR;
+icon-font = 1
+
+label-active = %icon% %name%
+label-active-underline= ${colors.color1}
+label-active-padding = 1
+
+label-occupied = %icon% %name%
+label-occupied-padding = 1
+
+label-urgent = %icon% %name%!
+label-urgent-background = ${colors.color2}
+label-urgent-padding = 1
+
+label-empty = %icon% %name%
+label-empty-foreground = ${colors.foreground}
+label-empty-padding = 1
+
 [module/date]
 type = internal/date
 date = %%{F#99}%m/%d/%Y%%{F-}  %%{F#fff}%I:%M %p%{F-}

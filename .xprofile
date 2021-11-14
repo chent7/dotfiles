@@ -9,6 +9,9 @@ picom --experimental-backends &
 # pywal colors
 xrdb ~/.cache/wal/colors.Xresources &
 
+#polybar
+#. ~/.config/scripts/polybar.sh frankenwm &
+
 # notifications
 # dunst &
 
