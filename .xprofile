@@ -9,12 +9,6 @@ picom --experimental-backends &
 # pywal colors
 xrdb ~/.cache/wal/colors.Xresources &
 
-#polybar
-#. ~/.config/scripts/polybar.sh frankenwm &
-
-# notifications
-# dunst &
-
 # polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
