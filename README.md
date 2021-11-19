@@ -1,7 +1,7 @@
 # dotfiles
 #### Screenshots:
-![alt text](https://github.com/chent7/dotfiles/blob/master/.screenshots/1.png?raw=true)
-![alt text](https://github.com/chent7/dotfiles/blob/master/.screenshots/2.png?raw=true)
+![alt text](https://github.com/chent7/dotfiles/blob/master/.config/resources/screenshots/1.png?raw=true)
+![alt text](https://github.com/chent7/dotfiles/blob/master/.config/resources/screenshots/2.png?raw=true)
 
 #### Directions:
 - Deploy my dotfiles with `yadm`
