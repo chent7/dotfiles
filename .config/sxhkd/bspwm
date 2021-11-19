@@ -1,9 +1,4 @@
 ### BSPWM KEYBINDS
-## APPLICATIONS
-# TERMINAL
-alt + Return
-	kitty
-
 ## WINDOW MANAGER CONTROL
 # CLOSE WINDOW
 alt + shift + q

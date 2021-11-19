@@ -10,6 +10,9 @@ XF86AudioMute
     pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 ## USER APPLICATIONS
+# TERMINAL
+alt + Return
+    kitty
 # ROFI DRUN
 alt + d
     rofi -show drun
