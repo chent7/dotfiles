@@ -1,0 +1,6 @@
+#!/bin/bash
+# LOAD BERRY KEYBINDS
+# (KEEP IN MIND THERE IS ALREADY AN INSTANCE OF SXHKD FOR GLOBAL KEYBINDS)
+pgrep -x sxhkd | wc -l >= 2 || sxhkd -c "$HOME/.config/sxhkd/berry" &
+# RESTARTS PICOM IF IT IS NOT RUNNING
+pgrep -x picom || picom --experimental-backends
