@@ -10,7 +10,7 @@ picom --experimental-backends &
 xrdb ~/.cache/wal/colors.Xresources &
 
 # settings daemon
-xfsettingsd
+xfsettingsd &
 
 # polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
@@ -24,6 +24,7 @@ xfwm4 &
 #dunst &
 
 # daemon
+pcmanfm -d &
 fcitx5 -d &
 sxhkd &
 xfce4-power-manager --daemon &

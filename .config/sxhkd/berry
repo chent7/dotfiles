@@ -1,4 +1,22 @@
 ### BERRY KEYBINDS
 ## WINDOW MANAGER CONTROL
+# CLOSE WINDOW
+alt + shift + q
+    berryc window_close
+# TOGGLE FULLSCREEN
+alt + f
+    berryc fullscreen
+# SNAP LEFT
+alt + q
+    berryc snap_left
+# SNAP RIGHT
+alt + e
+    berryc snap_right
+# CYCLE FOCUS
+alt + Tab
+    berryc cycle_focus
 
 ## DESKTOPS
+# FOCUS DESKTOP # & SEND TO DESKTOP #
+alt + {_,shift + }{1-9,0}
+    berryc {switch_workspace,send_to_workspace} '^{1-9,10}'

@@ -22,9 +22,10 @@ alt + p
 # I3LOCK
 super + l
     i3lock -e -B 4
-# FLAMESHOT
+# SCREENSHOT
 super + p
-    flameshot gui
+    xfce4-screenshooter -r
+    #flameshot gui
 
 # SXHKD RELOAD
 super + Escape
