@@ -17,6 +17,7 @@ xrdb ~/.cache/wal/colors.Xresources &
 #bspwm &
 
 # daemon
+deadd-notification-center &
 fcitx5 -d &
 sxhkd &
 xfce4-power-manager --daemon &
