@@ -3,9 +3,9 @@
 # CLOSE WINDOW
 alt + shift + q
     berryc window_close
-# TOGGLE FULLSCREEN
+# TOGGLE MONOCLE
 alt + f
-    berryc fullscreen
+    berryc window_monocle
 # SNAP LEFT
 alt + q
     berryc snap_left
@@ -15,8 +15,11 @@ alt + e
 # CYCLE FOCUS
 alt + Tab
     berryc cycle_focus
+# CLICK TO FOCUS
+~button1
+    berryc pointer_focus
 
 ## DESKTOPS
 # FOCUS DESKTOP # & SEND TO DESKTOP #
-alt + {_,shift + }{1-9,0}
-    berryc {switch_workspace,send_to_workspace} '^{1-9,10}'
+alt + {_,shift + }{1-9}
+    berryc {switch_workspace,send_to_workspace} {0-9}

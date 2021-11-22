@@ -4,3 +4,20 @@
 pgrep -x sxhkd | wc -l >= 2 || sxhkd -c "$HOME/.config/sxhkd/berry" &
 # RESTARTS PICOM IF IT IS NOT RUNNING
 pgrep -x picom || picom --experimental-backends
+
+berryc name_desktop 0 0
+berryc name_desktop 1 1
+berryc name_desktop 2 2
+berryc name_desktop 3 3
+berryc name_desktop 4 4
+
+berryc border_width 2
+berryc inner_border_width 2
+
+berryc draw_text "false"
+berryc title_height 0
+
+berryc edge_gap 10 38 10 10
+
+berryc smart_place "true"
+berryc decorate_new "true"
