@@ -9,26 +9,14 @@ picom --experimental-backends &
 # pywal colors
 xrdb ~/.cache/wal/colors.Xresources &
 
-# settings daemon
-xfsettingsd &
-
 # polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # window manager
-berry &
-#xfwm4 &
+#berry &
 #bspwm &
 
-# panel
-xfce4-panel &
-
-# notification daemon
-/usr/lib/xfce4/notifyd/xfce4-notifyd &
-
 # daemon
-xfce4-screensaver &
-dolphin --daemon &
 fcitx5 -d &
 sxhkd &
 xfce4-power-manager --daemon &
