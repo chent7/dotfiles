@@ -1,9 +1,25 @@
+// AUTHOR: https://github.com/chent7
+
 configuration {
-	theme: "~/.cache/wal/colors-rofi-dark";
 	font: "JetBrains Mono 12";
-	width: 600;
+    icon-theme: "Papirus";
 	show-icons: true;
 	display-drun: "Search";
+    drun-display-format: "{name}";
+    sidebar-mode: false;
+}
+
+@theme "~/.cache/wal/colors-rofi-dark"
+
+window {
+    transparency:                   "real";
+	border:							2% 1% 2% 1%;
+    border-radius:                  0% 0% 0% 0%;
+    height:                         70%;
+    width:                          70%;
+    location:                       center;
+    x-offset:                       0;
+    y-offset:                       0;
 }
 
 element {

@@ -12,15 +12,9 @@ xrdb ~/.cache/wal/colors.Xresources &
 # polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
-# window manager
-#berry &
-#bspwm &
-
 # daemon
-deadd-notification-center &
 fcitx5 -d &
 sxhkd &
-xfce4-power-manager --daemon &
 nm-applet &
 
 # wallpaper
