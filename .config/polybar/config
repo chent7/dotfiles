@@ -16,9 +16,11 @@ font-1 = "Material Icons:pixelsize=10;3"
 font-2 = "Noto Sans CJK TC:pixelsize=10;1"
 modules-left = bspwm xwindow
 modules-right = cpu memory network pulseaudio date
+padding-right = 1
 wm-restack = bspwm
 tray-position = right
-tray-padding = 2 
+tray-padding = 2
+tray-background = ${colors.color1}
 
 [bar/frankenwm]
 width = 100%

@@ -1,26 +1,29 @@
 #!/bin/bash
-# nvidia
+# Set default refresh rate
+xrandr --output HDMI-0 --mode 1920x1080 --rate 144
+
+# Nvidia driver settings
 nvidia-settings --load-config-only &
 nvidia-settings -a '[gpu:0]/GPUPowerMizerMode=1' &
 
-# picom
+# Compositor
 picom --experimental-backends &
 
-# pywal colors
+# Pywal colors (Xrdb)
 xrdb ~/.cache/wal/colors.Xresources &
 
-# polkit
+# Polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
-# daemon
+# Daemon
 fcitx5 -d &
 sxhkd &
 nm-applet &
 
-# wallpaper
+# Set wallpaper
 nitrogen --restore &
 
-# autostart
+# Autostart applications
 steam-native -silent &
 qbittorrent &
 discord --start-minimized &
