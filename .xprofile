@@ -1,6 +1,6 @@
 #!/bin/bash
 # Set default refresh rate
-xrandr --output HDMI-0 --mode 1920x1080 --rate 144
+#xrandr --output HDMI-0 --mode 1920x1080 --rate 144
 
 # Nvidia driver settings
 nvidia-settings --load-config-only &
@@ -16,12 +16,16 @@ xrdb ~/.cache/wal/colors.Xresources &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # Daemon
+xfce4-power-manager &
 fcitx5 -d &
 sxhkd &
 nm-applet &
 
 # Set wallpaper
 nitrogen --restore &
+
+# Give a chance for DE to set DPI scaling before launching GUI applications
+sleep 1
 
 # Autostart applications
 steam-native -silent &
