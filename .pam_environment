@@ -1,5 +1,5 @@
 # Theming
-QT_QPA_PLATFORMTHEME=qt5ct
+QT_QPA_PLATFORMTHEME=qt6ct
 
 # Input Method
 GTK_IM_MODULE=fcitx
