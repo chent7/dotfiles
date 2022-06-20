@@ -6,7 +6,7 @@ autoload -U colors && colors
 #source ~/.cache/wal/colors-tty.sh
 
 # prompt
-PS1="%B%{$fg[red]%} %~ %{$reset_color%}>%b "
+PS1="%B%{$fg[red]%} π %{$reset_color%}>%b "
 
 # history
 HISTSIZE=1000
