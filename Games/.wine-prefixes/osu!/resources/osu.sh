@@ -8,4 +8,4 @@ export PIPEWIRE_LATENCY=128/48000
 pgrep -x winediscordipcbridge.exe > /dev/null || wine "$HOME/Games/.wine-prefixes/osu!/resources/winediscordipcbridge.exe" &
 
 sleep 1
-wine "$HOME/Games/osu!/osu!.exe" $@
+wine "/run/media/chent7/Fast Storage/Games/osu!/osu!.exe" $@

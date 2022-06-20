@@ -1,6 +1,4 @@
 #!/bin/bash
-# Load ICC profile
-dispwin -L &
 
 # Nvidia driver settings
 nvidia-settings --load-config-only &
@@ -16,6 +14,7 @@ xrdb ~/.cache/wal/colors.Xresources &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # Daemon
+deadd-notification-center &
 xfce4-power-manager &
 fcitx5 -d &
 sxhkd &
@@ -28,6 +27,7 @@ nitrogen --restore &
 sleep 1
 
 # Autostart applications
+bitwarden &
 steam-native -silent &
 qbittorrent &
 discord --start-minimized &

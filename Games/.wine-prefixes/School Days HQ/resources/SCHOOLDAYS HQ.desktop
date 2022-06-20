@@ -1,8 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=SCHOOLDAYS HQ
-Type=Application
-Exec=/bin/bash -c "$HOME/Games/.wine-prefixes/School Days HQ/resources/schooldays-hq.sh"
-Icon=schooldays-hq-icon
-StartupWMClass=SCHOOLDAYS HQ.exe
-Categories=Games
