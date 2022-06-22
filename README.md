@@ -1,11 +1,11 @@
 # dotfiles
 #### Screenshots:
-![alt text](https://github.com/chent7/dotfiles/blob/master/.config/resources/screenshots/1.png?raw=true)
-![alt text](https://github.com/chent7/dotfiles/blob/master/.config/resources/screenshots/2.png?raw=true)
+![alt text](https://github.com/chent7/dotfiles/blob/master/.resources/screenshots/1.png?raw=true)
+![alt text](https://github.com/chent7/dotfiles/blob/master/.resources/screenshots/2.png?raw=true)
 
 #### Directions:
 - Deploy my dotfiles with `yadm`
-- Information on game configs see `~/Games/.wine-prefixes/*`
+- Information on game configs see `~/.resources` and my other repos
 #### Note:
 - My dotfiles are designed for `lightdm` and won't work properly with `xinit` display managers like `emptty`
 - I use proprietary `nvidia-dkms` drivers
