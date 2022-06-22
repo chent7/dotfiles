@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Name=osu! (ripple.moe)
 Type=Application
-Exec=/bin/bash -c "$HOME/Games/.wine-prefixes/osu!/resources/osu.sh -devserver ripple.moe"
+Exec=/bin/bash -c "$HOME/.scripts/osu.sh -devserver ripple.moe"
 Icon=osu-icon
 StartupWMClass=osu!.exe
 Categories=Games
