@@ -1,8 +1,0 @@
-#!/bin/bash
-alias ls='ls --color=auto'
-alias c='clear'
-alias n='nano'
-alias nf='neofetch'
-
-
-alias osr2mp4='python ~/Applications/osr2mp4-app/main.py'
