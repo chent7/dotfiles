@@ -1,3 +1,4 @@
+# Alternatively put in /etc/environment
 # Theming
 QT_QPA_PLATFORMTHEME=qt6ct
 
@@ -9,3 +10,4 @@ SDL_IM_MODULE=fcitx
 
 # Java Applications
 _JAVA_AWT_WM_NONREPARENTING=1
+_JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'

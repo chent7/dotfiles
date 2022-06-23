@@ -19,6 +19,7 @@ xfce4-power-manager &
 fcitx5 -d &
 sxhkd &
 nm-applet &
+alttab -w 1 &
 
 # Set wallpaper
 nitrogen --restore &

@@ -31,9 +31,9 @@ label = %title:0:30:...%
 [module/xworkspaces]
 type = internal/xworkspaces
 
-icon-0 = WEB;
-icon-1 = GAM;
-icon-2 = SOC;
+icon-0 = I;
+icon-1 = II;
+icon-2 = III;
 icon-3 = FIL;
 icon-4 = CON;
 icon-5 = TER;
@@ -66,13 +66,13 @@ date-alt = %%{F#fff}%A, %B %d, %Y  %%{F#fff}%I:%M:%{F#666}%%{F#fba922}%S%%{F-} %
 [module/bspwm]
 type = internal/bspwm
 
-ws-icon-0 = WEB;
-ws-icon-1 = GAM;
+ws-icon-0 = I;
+ws-icon-1 = II;
 ws-icon-2 = SOC;
 ws-icon-3 = FIL;
 ws-icon-4 = CON;
 ws-icon-5 = TER;
-ws-icon-6 = COD;
+ws-icon-6 = VII;
 ws-icon-7 = IMG;
 ws-icon-8 = VID;
 ws-icon-9 = TOR;
@@ -100,7 +100,7 @@ format-volume = <label-volume> <ramp-volume> <bar-volume>
 label-volume = VOL %percentage%%
 label-volume-foreground = ${root.foreground}
 
-label-muted = VOL muted 
+label-muted = VOL muted 
 label-muted-foreground = #666
 
 ramp-volume-0 = 
