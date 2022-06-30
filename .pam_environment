@@ -1,6 +1,8 @@
 # Alternatively put in /etc/environment
 # Theming
-QT_QPA_PLATFORMTHEME=qt6ct
+## WORKS WITH BOTH QT5 & QT6 APPLICATIONS
+# https://github.com/trialuser02/qt6ct/issues/12
+QT_QPA_PLATFORMTHEME=qt5ct
 
 # Input Method
 GTK_IM_MODULE=fcitx

@@ -12,7 +12,7 @@ XF86AudioMute
 ## USER APPLICATIONS
 # TERMINAL
 alt + Return
-    kitty
+    alacritty
 # ROFI DRUN
 alt + d
     rofi -show drun

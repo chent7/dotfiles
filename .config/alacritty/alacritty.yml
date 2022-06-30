@@ -23,7 +23,7 @@
   # available, otherwise `xterm-256color` is used.
   #TERM: alacritty
 
-#window:
+window:
   # Window dimensions (changes require restart)
   #
   # Number of lines/columns (not pixels) in the terminal. The number of columns
@@ -45,9 +45,9 @@
   #
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
-  #padding:
-  #  x: 0
-  #  y: 0
+  padding:
+    x: 5
+    y: 10
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
@@ -67,7 +67,7 @@
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  #opacity: 1.0
+  opacity: 0.9
 
   # Startup Mode (changes require restart)
   #
@@ -108,19 +108,19 @@
   #multiplier: 3
 
 # Font configuration
-#font:
+font:
   # Normal (roman) font face
-  #normal:
+  normal:
     # Font family
     #
     # Default:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    #family: monospace
+    family: JetBrainsMono Nerd Font Mono
 
     # The `style` can be specified to pick a specific face.
-    #style: Regular
+    style: Regular
 
   # Bold font face
   #bold:
@@ -156,7 +156,7 @@
     #style: Bold Italic
 
   # Point size
-  #size: 11.0
+  size: 12.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -189,7 +189,7 @@
 #draw_bold_text_with_bright_colors: false
 
 # Colors (Tomorrow Night)
-#colors:
+colors:
   # Default colors
   #primary:
   #  background: '#1d1f21'
@@ -330,7 +330,7 @@
   # Whether or not `window.opacity` applies to all cell backgrounds or only to
   # the default background. When set to `true` all cells will be transparent
   # regardless of their background color.
-  #transparent_background_colors: false
+  transparent_background_colors: true
 
 # Bell
 #

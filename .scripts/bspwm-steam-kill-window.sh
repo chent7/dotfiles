@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 if [[ $(xprop -id $(bspc query -N -n) WM_CLASS) = *"Steam"* ]]; then
     # unmap steam window
     xdotool windowunmap $(xdotool getactivewindow)
