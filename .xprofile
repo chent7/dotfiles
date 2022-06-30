@@ -17,7 +17,6 @@ xrdb ~/.cache/wal/colors.Xresources &
 deadd-notification-center &
 xfce4-power-manager &
 fcitx5 -d &
-sxhkd &
 nm-applet &
 alttab -w 1 &
 

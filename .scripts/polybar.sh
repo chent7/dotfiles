@@ -29,4 +29,4 @@ export color14="${color14}"
 export color15="${color15}"
 
 # launch polybar
-polybar $1
+polybar $1 &

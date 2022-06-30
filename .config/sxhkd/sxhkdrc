@@ -1,4 +1,5 @@
 ### GLOBAL KEYBINDS
+## SXHKD RELOAD SHOULD BE BINDED WITH WINDOW MANAGER
 # AUDIO KEYBINDS
 XF86AudioRaiseVolume
     pactl set-sink-volume @DEFAULT_SINK@ +5%
@@ -26,7 +27,3 @@ super + l
 super + p
     xfce4-screenshooter -r
     #flameshot gui
-
-# SXHKD RELOAD
-super + Escape
-    pkill -USR1 -x sxhkd

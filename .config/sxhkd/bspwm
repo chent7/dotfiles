@@ -5,7 +5,7 @@ alt + shift + q
     bspc node -c
 # RELOAD BSPWM & SXHKD
 alt + shift + r
-    bspc wm -r && pkill -USR1 -x sxhkd
+    bspc wm -r && pkill -USR1 -x sxhkd; notify-send "Window Manager Reloaded."
 # QUIT
 alt + control + q
 	bspc quit
