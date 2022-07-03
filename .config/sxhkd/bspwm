@@ -1,36 +1,34 @@
 ### BSPWM KEYBINDS
-## WINDOW MANAGER CONTROL
-# CLOSE WINDOW
-alt + shift + q
-    bspc node -c
+## WINDOW MANAGER
+
 # RELOAD BSPWM & SXHKD
 alt + shift + r
     bspc wm -r && pkill -USR1 -x sxhkd; notify-send "Window Manager Reloaded."
-# QUIT
+
+# QUIT BSPWM
 alt + control + q
 	bspc quit
-# FOCUS NEXT WINDOW
-#alt + shift + Tab
-#    bspc node -f next.local.!hidden.window
+
+## WINDOW
+
+# CLOSE WINDOW
+alt + shift + q
+    bspc node -c
+
 # SET TILING
-alt + t
+alt + shift + t
     bspc node -t tiled
+
 # SET FLOATING
-alt + f
-    bspc node -t floating
-# SET FULLSCREEN
 alt + shift + f
+    bspc node -t floating
+
+# SET FULLSCREEN
+alt + ctrl + f
     bspc node -t fullscreen
 
-## LAYOUT CONTROL
-# SET MASTER
-alt + shift + Return
-	bspc node -s biggest.window
+## DESKTOP
 
-## DESKTOPS
-# NEXT DESKTOP
-#alt + Tab
-#	bspc desktop -f next.local
-# FOCUS DESKTOP # & SEND TO DESKTOP #
+# FOCUS, SEND TO DESKTOP
 alt + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'

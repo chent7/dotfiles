@@ -1,0 +1,52 @@
+### DK KEYBINDS
+## WINDOW MANAGER
+
+# RELOAD DKRC & SXHKD
+alt + shift + r
+	dkcmd reload && pkill -USR1 -x sxhkd; notify-send "Window Manager Reloaded."
+
+# RESTART DK
+alt + ctrl + shift + r
+	dkcmd restart
+
+# QUIT DK
+alt + ctrl + shift + q
+	dkcmd exit
+
+## WINDOW
+
+# CLOSE WINDOW
+alt + shift + q
+    dkcmd win kill
+
+# SWAP MASTER
+alt + space
+    dkcmd win swap
+
+# CYCLE
+alt + c
+    dkcmd win cycle
+
+# TOGGLE FLOATING
+alt + shift + f
+    dkcmd win float
+
+# TOGGLE FULLSCREEN, FAKE FULLSCREEN
+alt + ctrl + {_,shift + }f
+	dkcmd win {full,fakefull}
+
+# CHANGE GAP WIDTHS
+alt + {equal,minus}
+	dkcmd set gap width {+5,-5}
+
+# CHANGE BORDER WIDTHS
+alt + ctrl + {_,shift + }{equal,minus}
+	dkcmd set border {width,outer_width} {+1,-1}
+
+# VIEW, SEND TO WORKSPACE
+alt + {_,shift + }{1-9,0}
+	dkcmd ws {view,send} {1-9,10}
+
+# MOVE UP/DOWN STACK
+alt + {Up,Down}
+	dkcmd win mvstack {up,down}
