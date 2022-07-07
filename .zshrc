@@ -27,7 +27,7 @@ __git_files () {
 }
 
 # alias
-[ -f "$HOME/.config/scripts/aliasrc" ] && source "$HOME/.config/scripts/aliasrc"
+[ -f "$HOME/.scripts/aliasrc" ] && source "$HOME/.scripts/aliasrc"
 
 # plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

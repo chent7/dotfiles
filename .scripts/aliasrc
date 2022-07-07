@@ -6,3 +6,4 @@ alias nf='neofetch'
 
 
 alias osr2mp4='python ~/Applications/osr2mp4-app/main.py'
+alias twunzip='unzip -O big5'

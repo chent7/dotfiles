@@ -104,6 +104,8 @@ fi
 	# window rules
 	# --------------
 
+    dkcmd rule class="^osu!.exe$" ignore=true
+    
 	# rule class, instance, and title regexes (*ALWAYS* CASE INSENSITIVE)
 
 	# open window(s) on a specific workspace (assigned monitor)

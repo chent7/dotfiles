@@ -16,7 +16,7 @@ xrdb ~/.cache/wal/colors.Xresources &
 # Daemon
 deadd-notification-center &
 xfce4-power-manager &
-fcitx5 -d &
+#fcitx5 -d &
 nm-applet &
 alttab -w 1 &
 
@@ -27,7 +27,6 @@ nitrogen --restore &
 sleep 1
 
 # Autostart applications
-bitwarden &
 steam-native -silent &
 qbittorrent &
 discord --start-minimized &
