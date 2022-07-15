@@ -1,5 +1,5 @@
 # path
-export PATH="$PATH:/home/pacer/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 # colors
 autoload -U colors && colors
@@ -27,7 +27,7 @@ __git_files () {
 }
 
 # alias
-[ -f "$HOME/.scripts/aliasrc" ] && source "$HOME/.scripts/aliasrc"
+[ -f "$HOME/.local/scripts/aliasrc" ] && source "$HOME/.local/scripts/aliasrc"
 
 # plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

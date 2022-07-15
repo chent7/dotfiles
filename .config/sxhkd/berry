@@ -4,8 +4,11 @@
 alt + shift + q
     berryc window_close
 # TOGGLE MONOCLE
-alt + f
+alt + shift + f
     berryc window_monocle
+# TOGGLE FULLSCREEN
+alt + control + f
+    berryc fullscreen
 # SNAP LEFT
 alt + q
     berryc snap_left
@@ -18,8 +21,16 @@ alt + Tab
 # CLICK TO FOCUS
 ~button1
     berryc pointer_focus
-
+# DECORATIONS
+alt + n
+    berryc toggle_decorations
+# QUIT
+alt + control + q
+    berryc quit
+# RELOAD SXHKD
+alt + shift + r
+    pkill -USR1 -x sxhkd; notify-send "SXHKD Reloaded."
 ## DESKTOPS
 # FOCUS DESKTOP # & SEND TO DESKTOP #
-alt + {_,shift + }{1-9}
-    berryc {switch_workspace,send_to_workspace} {0-9}
+alt + {_,shift + }{1-9,0}
+    berryc {switch_workspace,send_to_workspace} {0-8,9}

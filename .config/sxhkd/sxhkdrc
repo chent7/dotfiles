@@ -25,5 +25,4 @@ super + l
     i3lock -e -B 4
 # SCREENSHOT
 super + p
-    xfce4-screenshooter -r
-    #flameshot gui
+    mkdir -p ~/Pictures/Screenshots; maim -b 2 -s ~/Pictures/Screenshots/$(date '+%Y-%m-%d-%s').png

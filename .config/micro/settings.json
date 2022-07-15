@@ -31,7 +31,7 @@
     "linter": true,
     "literate": true,
     "matchbrace": true,
-    "mkparents": false,
+    "mkparents": true,
     "mouse": true,
     "parsecursor": false,
     "paste": false,
