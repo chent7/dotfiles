@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Name=osu!
 Type=Application
-Exec=/bin/bash -c "$HOME/.scripts/osu.sh"
+Exec=/bin/bash -c "$HOME/.local/scripts/osu.sh"
 Icon=osu-icon
 StartupWMClass=osu!.exe
 Categories=Games

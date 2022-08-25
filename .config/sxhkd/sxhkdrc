@@ -17,12 +17,11 @@ alt + Return
 # ROFI DRUN
 alt + d
     rofi -show drun
-# ROFI RUN
-alt + p
-    rofi -show run
 # I3LOCK
 super + l
     i3lock -e -B 4
 # SCREENSHOT
 super + p
     mkdir -p ~/Pictures/Screenshots; maim -b 2 -s ~/Pictures/Screenshots/$(date '+%Y-%m-%d-%s').png
+# xprop
+super + delete

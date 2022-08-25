@@ -7,18 +7,13 @@ nvidia-settings -a '[gpu:0]/GPUPowerMizerMode=1' &
 # Compositor
 picom --experimental-backends &
 
-# Pywal colors (Xrdb)
-xrdb ~/.cache/wal/colors.Xresources &
-
 # Polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # Daemon
-deadd-notification-center &
+dunst &
 xfce4-power-manager &
-#fcitx5 -d &
-nm-applet &
-alttab -w 1 &
+streamdeck --no-ui &
 
 # Set wallpaper
 nitrogen --restore &
