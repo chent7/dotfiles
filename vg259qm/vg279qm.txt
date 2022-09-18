@@ -1,0 +1,4 @@
+xrandr --newmode "1920x1080_280.00" 628.00 1920 1968 2028 2040 1080 1090 1092 1100 +HSync -Vsync
+xrandr --addmode DP-1 "1920x1080_280.00"
+#xrandr -s 1920x1080_280.00
+xrandr --rate 280
