@@ -1,0 +1,139 @@
+(deflisten workspaces "scripts/workspace.sh")
+(defpoll taskbar :interval "1s" "scripts/taskbar.sh")
+
+(defvar volume-reveal false)
+(deflisten volume-icon "scripts/volume-icon.sh")
+(defpoll vol :interval "1s" "pamixer --get-volume")
+
+(defpoll hours :interval "1s" "date '+%I'")
+(defpoll minutes :interval "1s" "date '+%M'")
+(defpoll time-state :interval "1s" "date '+%p'")
+
+(defvar wm-buttons-reveal false)
+
+(defwindow bar-center
+    :monitor 0
+    :geometry (geometry :x "0" :y "-10px" :width "550px" :height "46px" :anchor "bottom center")
+    :stacking "bg"
+    :reserve (struts :distance "-10px" :side "bottom")
+    :windowtype "dock"
+    :wm-ignore false
+    (centerbox :orientation "h"
+    (center-left)
+    (center)
+    (center-right)))
+
+(defwindow bar-left
+    :monitor 0
+    :geometry (geometry :x "10px" :y "-10px" :width "675px" :height "46px" :anchor "bottom left")
+    :stacking "bg"
+    :reserve (struts :distance "-10px" :side "bottom")
+    :windowtype "dock"
+    :wm-ignore false
+    (box :orientation "h" :space-evenly "false" :halign "start" :hexpand "false" :valign "center" :vexpand "false"
+    (launcher)
+    (taskbar)))
+
+(defwindow bar-right
+    :monitor 0
+    :geometry (geometry :x "-10px" :y "-10px" :width "10px" :height "46px" :anchor "bottom right")
+    :stacking "bg"
+    :reserve (struts :distance "-10px" :side "bottom")
+    :windowtype "dock"
+    :wm-ignore false
+    (box :orientation "h"
+    (right)))
+
+(defwidget taskbar []
+    (box :class "left" :orientation "h" :hexpand "false" :vexpand "false" :halign "start" :valign "center"
+    (literal :content taskbar)))
+
+(defwidget right []
+    (box :class "right" :orientation "h" :hexpand "true" :halign "end"
+    (clock)))
+
+(defwidget center-left []
+    (box :class "left" :orientation "h" :space-evenly "false" :halign "end"
+    (left-buttons)))
+
+(defwidget center []
+    (box :class "center" :orientation "h" :space-evenly "false" 
+        :halign "center" :hexpand "false"
+        :valign "center" :vexpand "false"
+    (literal :content workspaces)))
+
+(defwidget center-right []
+    (box :class "right" :orientation "h" :space-evenly "false" :halign "start"
+    (right-buttons)
+    (volume)))
+
+(defwidget launcher []
+    (eventbox :cursor "hand"
+        (box :class "launcher-box" :space-evenly "false" :halign "start" :hexpand "false" :valign "center" :vexpand "false"
+            (button :class "launcher" :timeout "1s" :onclick "scripts/bar-actions.sh --launcher"
+                (label :class "icon" :text "異")))))
+
+(defwidget left-buttons []
+    (eventbox :onhover "eww update wm-buttons-reveal=true"
+        :onhoverlost "eww update wm-buttons-reveal=false"
+        (box :orientation "h" :space-evenly "false" 
+            :halign "center" :hexpand "false"
+            :valign "center" :vexpand "false"
+            (button :class "move-left-button" 
+                :onclick "scripts/window-mover.sh -m left"
+                :timeout "1s"
+            (label :class "icon" :vexpand "false" :text ""))
+            (button :class "move-left-button" 
+                :onclick "xdotool set_desktop_for_window $(xdotool getactivewindow) \
+                    $(scripts/window-mover.sh -p)"
+                :timeout "1s"
+            (label :class "icon" :text "")))))
+
+(defwidget right-buttons []
+    (eventbox :onhover "eww update wm-buttons-reveal=true"
+        :onhoverlost "eww update wm-buttons-reveal=false"
+        (box :orientation "h" :space-evenly "false" 
+            :halign "center" :hexpand "false"
+            :valign "center" :vexpand "false"
+            (button :class "move-right-button" 
+                :onclick "xdotool set_desktop_for_window $(xdotool getactivewindow) \
+                    $(scripts/window-mover.sh -n)"
+                :timeout "1s"
+            (label :class "icon" :text ""))
+            (button :class "move-left-button" 
+                :onclick "scripts/window-mover.sh -m right"
+                :timeout "1s"
+            (label :class "icon" :vexpand "false" :text "")))))
+
+(defwidget volume []
+    (eventbox :onhover "eww update volume-reveal=true" 
+        :onhoverlost "eww update volume-reveal=false"
+        (box :class "volume-box" :space-evenly "false" :halign "center" :valign "center"
+        (button :class "volume-button"
+            :onclick "pamixer --toggle-mute"
+            :timeout "1s"
+        (literal :content volume-icon))
+        (revealer :transition "slideright" :reveal volume-reveal :duration "350ms"
+            (scale :class "volume-scale" :orientation "h" :active true
+                :width 100
+                :value vol
+                :onchange `pamixer --set-volume $(printf "%.0f" {})` 
+                :min 0 
+                :max 101
+                :timeout "1s")))))
+
+(defwidget clock []
+    (box :class "clock"
+        (button :class "clock-button" :timeout "1s" :onclick "scripts/bar-actions.sh --calendar" 
+            "${hours}:${minutes} ${time-state}")))
+
+(defwindow calendar
+    :monitor 0 
+    :geometry (geometry :x "0px" :y "-66px" :anchor "center bottom" :width "400px" :height "100px")
+    (eventbox :onhoverlost "scripts/bar-actions.sh --calendar"  :timeout "1s"
+    (calendar)))
+
+(defwindow volume-settings
+    :monitor 0
+    :geometry (geometry :x "-12px" :y "-68px" :anchor "right bottom" :width "400px" :height "100px")
+    "hi")

@@ -1,0 +1,170 @@
+$icons-font: "Symbols Nerd Font";
+$bg: #000000;
+$fg: #ffffff;
+$focused: #121212;
+$occupied: #454545;
+$empty: #783434;
+
+// GLOBAL AND TEMPLATES
+
+* {
+    all: unset;
+    font-family: "Iosevka Aile";
+    font-size: 15px;
+}
+
+.window-background {
+    background-color: $bg;
+    border-radius: 15px;
+}
+
+.rounded-background {
+    background-color: #aaaaaa;
+    border-radius: 15px;
+    padding: 1px 2px 1px 2px;
+}
+
+.icon {
+    font-family: $icons-font;
+    font-size: 24px;
+}
+
+.box {
+    padding: 0px 10px 0px 10px;
+}
+
+.scale {
+    border-radius: 20px;
+    background-color: $fg;
+    box-shadow: 0px 0px 7px #141414;
+}
+
+.button {
+    padding: 2px 2px 2px 2px;
+}
+
+// INDIVIDUAL ADJUSTMENTS
+
+.taskbar-icon {
+    @extend .icon;
+    font-size: 18px;
+    padding: 0px 0px 0px 2px;
+}
+
+.window {
+    background-color: #aaaaaa;
+    border-radius: 10px;
+    padding: 8px 5px 8px 5px;
+    margin: 0px 0px 0px 5px;
+}
+
+.wm-icon {
+    @extend .icon;
+    font-size: 18px;
+}
+
+.workspace-icon-focused {
+    @extend .icon;
+    color: $focused;
+}
+
+.workspace-icon-occupied {
+    @extend .icon;
+    color: #00FF00;
+}
+
+.workspace-icon-empty {
+    @extend .icon;
+    color: $fg;
+}
+
+.workspaces {
+    @extend .rounded-background;
+}
+
+.workspace-button {
+    @extend .button;
+}
+
+.wm-controls-button {
+    @extend .button;
+}
+
+.clock-button {
+    @extend .button;
+}
+
+.volume-scale {
+    padding: 0px 10px 0px 10px;
+}
+
+.volume-scale trough {
+    @extend .scale;
+}
+
+.volume-scale highlight {
+    padding: 0.5em;
+    border-radius: 15px;
+    background: linear-gradient(to left, #123456, $fg);
+}
+
+.volume-box {
+    @extend .box;
+}
+
+.bar {
+    background-color: $bg;
+    border-radius: 15px;
+}
+
+.bar-center {
+    background-color: $bg;
+}
+
+.bar-left {
+    background-color: $bg;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.bar-right {
+    background-color: $bg;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.launcher-box {
+    margin: 0px 5px 0px 10px;
+}
+
+.wm-controls-box {
+    @extend .box;
+}
+
+.wm-controls-box-bg {
+    @extend .rounded-background;
+    margin: 0px 10px 0px 10px;
+}
+
+.calendar {
+    @extend .window-background;
+}
+
+.clock {
+    @extend .rounded-background;
+    margin: 10px 10px 10px 10px;
+}
+
+.focused {
+    @extend .icon;
+    color: $focused;
+}
+
+.occupied {
+    @extend .icon;
+    color: $focused;
+}
+
+.empty {
+    @extend .icon;
+    color: $focused;
+}
+
