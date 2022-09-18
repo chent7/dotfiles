@@ -1,0 +1,22 @@
+.xfce4-panel {
+    border-radius: 15px;
+    border-width: 0px;
+}
+
+.xfce4-panel .tasklist .toggle {
+    border-radius: 15px;
+}
+
+#pulseaudio-button > image { 
+    -gtk-icon-transform: scale(.5);
+}
+
+#launcher-1 button {
+    border-radius: 23px;
+}
+
+wnck-pager {
+    -gtk-icon-transform: scale(.7);
+    
+}
+
