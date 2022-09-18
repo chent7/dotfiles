@@ -1,0 +1,28 @@
+#!/bin/sh
+# SXHKD FOR GLOBAL AND WORM KEYBINDS
+pgrep -x sxhkd || sxhkd -c "$HOME/.config/sxhkd/sxhkdrc" "$HOME/.config/sxhkd/worm" &
+
+wormc border-width 2
+
+wormc layout floating
+wormc struts 10 60 10 10
+wormc gaps 12
+wormc frame-height 30
+wormc frame-right 'I;M;C;'
+wormc button-size 16
+wormc button-offset 12 12
+wormc focus-mode 2
+wormc close-active-path ~/.config/worm/icons/close.png
+wormc close-inactive-path ~/.config/worm/icons/close.png
+wormc close-inactive-hovered-path ~/.config/worm/icons/close-hover.png
+wormc close-active-hovered-path ~/.config/worm/icons/close-hover.png
+wormc minimize-active-path ~/.config/worm/icons/minimize.png
+wormc minimize-inactive-path ~/.config/worm/icons/minimize.png
+wormc minimize-inactive-hovered-path ~/.config/worm/icons/minimize-hover.png
+wormc minimize-active-hovered-path ~/.config/worm/icons/minimize-hover.png
+wormc maximize-active-path ~/.config/worm/icons/maximize.png
+wormc maximize-inactive-path ~/.config/worm/icons/maximize.png
+wormc maximize-inactive-hovered-path ~/.config/worm/icons/maximize-hover.png
+wormc maximize-active-hovered-path ~/.config/worm/icons/maximize-hover.png
+
+pgrep -x xfce4-panel || xfce4-panel &
