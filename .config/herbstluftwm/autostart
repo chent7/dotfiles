@@ -1,0 +1,116 @@
+#!/bin/sh
+
+hc() {
+    herbstclient "$@"
+}
+
+hc emit_hook reload
+
+# remove all existing keybindings
+hc keyunbind --all
+hc mouseunbind --all
+
+# rules
+hc unrule -F
+hc rule focus=on
+hc rule floatplacement=center
+
+hc rule windowtype~'_NET_WM_WINDOW_TYPE_(DIALOG|UTILITY|SPLASH)' floating=on
+hc rule windowtype='_NET_WM_WINDOW_TYPE_DIALOG' focus=on
+hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK|DESKTOP)' manage=off
+hc rule fixedsize floating=on
+
+hc rule title~"qBittorrent v.*" tag=9
+hc rule class="Pavucontrol" floating=true
+hc rule class="MEGAsync" floating=true floatplacement=none
+hc rule class="imv" floating=true
+hc rule class="mpv" floating=true
+hc rule title="JDownloader" floating=true floatplacement=none
+hc rule class="Xfce4-taskmanager" floating=true
+hc rule class="Nvidia-settings" floating=true
+
+Mod=Mod1
+hc mousebind $Mod-Button1 move
+hc mousebind $Mod-Button2 zoom
+hc mousebind $Mod-Button3 resize
+
+hc pad 1 10 10 60 10
+hc set window_gap 10
+hc set frame_padding -10
+hc set auto_detect_panels false
+hc set smart_window_surroundings false
+hc set smart_frame_surroundings true
+hc set mouse_recenter_gap 0
+hc set focus_follows_mouse true
+
+hc set default_frame_layout "horizontal"
+hc substitute ALGO settings.default_frame_layout \
+    foreach T tags.by-name. \
+    sprintf ATTR '%c.tiling.root.algorithm' T \
+    set_attr ATTR ALGO
+
+# tags
+tag_names=( {1..9} )
+hc rename default "${tag_names[0]}" || true
+for i in "${!tag_names[@]}" ; do
+    hc add "${tag_names[$i]}"
+done
+
+# theme
+hc attr theme.tiling.reset 1
+hc attr theme.floating.reset 1
+hc set frame_border_active_color '#222222cc'
+hc set frame_border_normal_color '#101010cc'
+hc set frame_bg_normal_color '#565656aa'
+hc set frame_bg_active_color '#345F0Caa'
+hc set frame_border_width 0
+hc set show_frame_decorations true
+hc set frame_bg_transparent true
+hc set frame_transparent_width 0
+hc set frame_gap 0
+
+hc attr theme.title_height 15
+hc attr theme.title_when never
+hc attr theme.title_font 'Dejavu Sans:pixelsize=12'  # example using Xft
+# hc attr theme.title_font '-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
+hc attr theme.title_depth 3  # space below the title's baseline
+hc attr theme.active.color '#345F0Cef'
+hc attr theme.title_color '#ffffff'
+hc attr theme.normal.color '#323232dd'
+hc attr theme.urgent.color '#7811A1dd'
+hc attr theme.tab_color '#1F1F1Fdd'
+hc attr theme.active.tab_color '#2B4F0Add'
+hc attr theme.active.tab_outer_color '#6C8257dd'
+hc attr theme.active.tab_title_color '#ababab'
+hc attr theme.normal.title_color '#898989'
+hc attr theme.inner_width 0
+hc attr theme.inner_color black
+hc attr theme.border_width 3
+hc attr theme.floating.border_width 3
+hc attr theme.floating.outer_width 0
+hc attr theme.floating.outer_color black
+hc attr theme.active.inner_color '#789161'
+hc attr theme.urgent.inner_color '#9A65B0'
+hc attr theme.normal.inner_color '#606060'
+# copy inner color to outer_color
+for state in active urgent normal ; do
+    hc substitute C theme.${state}.inner_color \
+        attr theme.${state}.outer_color C
+done
+hc attr theme.tiling.outer_width 0
+hc attr theme.background_color '#141414'
+
+
+
+hc set tree_style '╾│ ├└╼─┐'
+
+# unlock, just to be sure
+hc unlock
+
+# do multi monitor setup here, e.g.:
+hc set_monitors 1920x1080+0+0 1920x1080+0+1080
+
+# SXHKD
+pgrep -x sxhkd || sxhkd -c $HOME/.config/sxhkd/sxhkdrc $HOME/.config/sxhkd/herbstluftwm &
+
+pgrep -x xfce4-panel || xfce4-panel &
