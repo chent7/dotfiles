@@ -25,3 +25,4 @@ sleep 1
 steam-native -silent &
 qbittorrent &
 discord --start-minimized &
+vibrantLinux &

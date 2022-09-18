@@ -19,7 +19,7 @@ alt + d
     rofi -show drun
 # I3LOCK
 super + l
-    i3lock -e -B 4
+    i3lock -e -B 10
 # SCREENSHOT
 super + p
     mkdir -p ~/Pictures/Screenshots; maim -b 2 -s ~/Pictures/Screenshots/$(date '+%Y-%m-%d-%s').png

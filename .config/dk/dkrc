@@ -3,7 +3,7 @@
 pgrep -x sxhkd || sxhkd -c "$HOME/.config/sxhkd/sxhkdrc" "$HOME/.config/sxhkd/dk" &
 
 # WORKSPACES
-dkcmd set numws=10
+dkcmd set numws=5
 
 dkcmd set ws=_ apply layout=tile master=1 stack=3 gap=10 msplit=0.5 ssplit=0.5
 dkcmd set ws=1 pad bottom=50
@@ -13,18 +13,14 @@ dkcmd set ws=4 pad bottom=50
 dkcmd set ws=5 pad bottom=50
 
 mon1='DP-2'
-mon2='HDMI-1'
+#mon2='HDMI-1'
 dkcmd set static_ws=true \
     ws=1  mon=$mon1 \
 	ws=2  mon=$mon1 \
 	ws=3  mon=$mon1 \
 	ws=4  mon=$mon1 \
-	ws=5  mon=$mon1 \
-	ws=6  mon=$mon2 \
-	ws=7  mon=$mon2 \
-	ws=8  mon=$mon2 \
-	ws=9  mon=$mon2 \
-	ws=10 mon=$mon2
+	ws=5  mon=$mon1
+#	ws=6  mon=$mon2
 
 # GLOBAL SETTINGS
 dkcmd set focus_open=true focus_urgent=true focus_mouse=true
@@ -39,11 +35,12 @@ dkcmd set border width=3  colour focus='#6699cc' unfocus='#000000' urgent='#ee55
 # APPLICATION RULES
 dkcmd rule remove '*'
 
-dkcmd rule class="^gimp$" ws=2
 dkcmd rule class="^(pavucontrol|transmission-gtk|steam|lxappearance)$" float=true
 dkcmd rule class="^google-chrome$" title="^open files$" float=true w=1280 h=720
 dkcmd rule class="^stickyterm$" stick=true float=true w=1280 h=720
 dkcmd rule class="^scratchpad$" float=true
+dkcmd rule class="^Imv$" float=true
+dkcmd rule class="^Mpv$" float=true
 
 dkcmd rule apply '*'
 
